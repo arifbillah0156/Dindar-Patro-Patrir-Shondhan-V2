@@ -6,15 +6,11 @@ export default async function SingleBiodata({ params }) {
   const fullData = await data(id);
 
   const {
-    date,
     boyOrGirl,
     name,
-    mobile,
-    email,
     age,
     height,
     weight,
-    birthID,
     birthDate,
     address,
     permanentAddress,
@@ -40,7 +36,6 @@ export default async function SingleBiodata({ params }) {
     selectOccupation,
     occupation,
     monthlyIncome,
-    guardianPermission,
     shokh,
     wifePorda,
     wifeEducation,
@@ -50,9 +45,6 @@ export default async function SingleBiodata({ params }) {
     personalDetails,
     familyDetails,
     partnerDetails,
-    fbLink,
-    extra,
-    fatherName,
     fatherOccupation,
     motherOccupation,
     brotherDetails,

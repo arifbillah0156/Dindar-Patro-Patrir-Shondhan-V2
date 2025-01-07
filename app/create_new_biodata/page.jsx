@@ -981,7 +981,7 @@ export default function Home() {
               </p>
               <input
                 type="text"
-                name="marriedGift"
+                name="fbLink"
                 value={formData.fbLink}
                 onChange={handleChange}
                 maxLength={100}
@@ -998,12 +998,12 @@ export default function Home() {
                 এডমিনরা দেখতে পাবে, আপনার বায়োডাটায় এটি যুক্ত হবে না।
               </p>
               <input
-                type="text"
+                type="extra"
                 name="marriedGift"
                 value={formData.extra}
                 onChange={handleChange}
                 maxLength={100}
-                placeholder="আপনার ফেসবুক আইডির লিংক দিন..."
+                placeholder="এক্সট্রা কিছু লিখতে পারেন..."
                 className="formInput"
               />
             </div>{" "}
