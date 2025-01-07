@@ -31,7 +31,6 @@ export default async function SingleBiodata({ params }) {
     marriedStatus,
     dari,
     porda,
-    ovivabokPermision,
     quran,
     namaj,
     mazhab,
@@ -208,7 +207,7 @@ export default async function SingleBiodata({ params }) {
             <hr />
             <Text text={"পারিবারিক দ্বীনি পরিবেশ"} value={familyDiniPoribesh} />
             <hr />
-            <Text text={"অভিভাবকের সম্মতি"} value={ovivabokPermision} />
+            <Text text={"অভিভাবকের সম্মতি"} value={guardianPermission} />
             <hr />
             <Text text={"জন্ম নিবন্ধন নাম্বার"} value={birthID} />
             <hr />

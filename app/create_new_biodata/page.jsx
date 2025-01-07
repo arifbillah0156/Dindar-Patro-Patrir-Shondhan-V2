@@ -65,7 +65,6 @@ export default function Home() {
     partnerDetails: "",
     fbLink: "",
     extra: "",
-    ovivabokPermision: "",
     fatherName: "",
     fatherOccupation: "",
     motherOccupation: "",
@@ -711,8 +710,8 @@ export default function Home() {
                 />
                 <input
                   type="text"
-                  name="ovivabokPermision"
-                  value={formData.ovivabokPermision}
+                  name="guardianPermission"
+                  value={formData.guardianPermission}
                   onChange={handleChange}
                   maxLength={100}
                   placeholder="...."
