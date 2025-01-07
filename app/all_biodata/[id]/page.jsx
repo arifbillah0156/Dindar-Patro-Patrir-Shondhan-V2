@@ -51,6 +51,7 @@ export default async function SingleBiodata({ params }) {
     sisterDetails,
     mamaDetails,
     familyDiniPoribesh,
+    guardianPermission,
     new1,
     new2,
     new3,
