@@ -97,7 +97,6 @@ export default function Home() {
       const newDataRef = await push(usersRef);
 
       set(newDataRef, formData);
-      console.log(formData);
       e.preventDefault();
       setSubmitted(true);
     } catch (error) {
@@ -200,7 +199,7 @@ export default function Home() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  maxLength={20}
+                  maxLength={100}
                   placeholder="আপনার ইমেইল লিখুন..."
                   className="formInput"
                 />
@@ -228,7 +227,7 @@ export default function Home() {
                   name="age"
                   value={formData.age}
                   onChange={handleChange}
-                  maxLength={20}
+                  maxLength={3}
                   placeholder="আপনার বর্তমান বয়স কত?"
                   className="formInput"
                   required
@@ -399,7 +398,7 @@ export default function Home() {
                   name="islamiShoriah"
                   value={formData.islamiShoriah}
                   onChange={handleChange}
-                  maxLength={100}
+                  maxLength={300}
                   placeholder="...."
                   className="formInput"
                 />
@@ -418,7 +417,7 @@ export default function Home() {
                   name="dinerKaj"
                   value={formData.dinerKaj}
                   onChange={handleChange}
-                  maxLength={100}
+                  maxLength={500}
                   placeholder="...."
                   className="formInput"
                 />
@@ -434,7 +433,7 @@ export default function Home() {
                   name="watchNatok"
                   value={formData.watchNatok}
                   onChange={handleChange}
-                  maxLength={100}
+                  maxLength={300}
                   placeholder="...."
                   className="formInput"
                 />
@@ -450,7 +449,7 @@ export default function Home() {
                   name="sharirikRog"
                   value={formData.sharirikRog}
                   onChange={handleChange}
-                  maxLength={100}
+                  maxLength={200}
                   placeholder="...."
                   className="formInput"
                 />
@@ -490,7 +489,7 @@ export default function Home() {
                   rows="2"
                   value={formData.personalDetails}
                   onChange={handleChange}
-                  maxLength={300}
+                  maxLength={1000}
                   placeholder="আপনার ব্যাক্তিগত অন্যান্য তথ্য....."
                   className="formInput"
                 ></textarea>
@@ -802,7 +801,7 @@ export default function Home() {
                   name="marriedGift"
                   value={formData.marriedGift}
                   onChange={handleChange}
-                  maxLength={100}
+                  maxLength={300}
                   placeholder="...."
                   className="formInput"
                 />
