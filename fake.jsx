@@ -15,6 +15,7 @@ const {
   growupAddress,
   bodyColor,
   bloodGroup,
+  ovivabokPermision,
   islamiShoriah,
   dinerKaj,
   watchNatok,

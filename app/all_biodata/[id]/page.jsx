@@ -27,6 +27,7 @@ export default async function SingleBiodata({ params }) {
     quran,
     namaj,
     mazhab,
+    ovivabokPermision,
     division,
     sscEducation,
     hscEducation,
@@ -188,6 +189,11 @@ export default async function SingleBiodata({ params }) {
             />
             <hr />
             <Text text={"যেমন জীবনসঙ্গী চাই"} value={partnerDetails} />
+            <hr />
+            <Text
+              text={"অভিভাবকের সম্মতি আছে কিনা"}
+              value={ovivabokPermision}
+            />
             <hr />
             <Text text={"পিতার পেশার বিবরণ"} value={fatherOccupation} />
             <hr />

@@ -65,6 +65,7 @@ export default function Home() {
     partnerDetails: "",
     fbLink: "",
     extra: "",
+    ovivabokPermision: "",
     fatherName: "",
     fatherOccupation: "",
     motherOccupation: "",
