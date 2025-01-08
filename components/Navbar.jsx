@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import couple from "@/public/Images/Couple.jpg";
+import couple from "@/public/Images/Couple2.jpg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,7 @@ export default function Navbar() {
                   src={couple}
                   width={75}
                   alt="Couple"
-                  className="rounded-full "
+                  className="rounded-full"
                 />
               </Link>
             </div>
