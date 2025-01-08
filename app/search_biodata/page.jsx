@@ -6,6 +6,7 @@ import BiodataCard from "./biodata_card.jsx";
 import LoadingSection from "./loadingPage.jsx";
 import { useSearchParams } from "next/navigation";
 import convertToBanglaDigits from "./engToBN_digits.jsx";
+import Link from "next/link.js";
 
 const DataComponent = () => {
   const [data, setData] = useState(null);
@@ -47,24 +48,50 @@ const DataComponent = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen ">
       {data ? (
         <div className="">
           <div className="w-full text-center">
             <h1 className="px-2 py-4 text-3xl text-purple-800 underline underline-offset-8 decoration-wavy">
               “{dataLen} টি বায়োডাটা”
             </h1>
-            <p className="text-pink-700 px-4">
-              আপনার কোনো বায়োডাটা পছন্দ হলে যোগাযোগের তথ্য পেতে “বায়োডাটা ID” নিয়ে আমাদের ফেসবুক পেইজে মেসেজ দিন।
+            <p className="text-pink-700 text-lg px-4 underline">
+              “আপনার কোনো বায়োডাটা পছন্দ হলে যোগাযোগের তথ্য পেতে “বায়োডাটা ID”
+              নিয়ে আমাদের ফেসবুক পেইজে মেসেজ দিন।”
             </p>
           </div>
-
+          <div className="text-center mb-2">
+            <Link
+              href="/guide"
+              className="text-lg  mx-2 px-3 py-2 underline text-blue-700"
+            >
+              পাত্র/পাত্রীর সাথে যোগাযোগের নিয়ম জানুন
+            </Link>{" "}
+            <br />
+            <Link
+              href="https://www.facebook.com/DeendarPatraPatrisandhan"
+              passHref
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg  mx-2 px-3 py-2 underline text-blue-700"
+            >
+              আমাদের ফেসবুক পেইজে যেতে এখানে ক্লিক করুন
+            </Link>
+          </div>{" "}
+          <hr />
+          <div className="w-full flex justify-center mt-2">
+            <div className="text-purple-800 text-left w-max bg-gray-50 p-3 rounded-lg text-xl">
+              <p>বায়োডাটার ধরণঃ “{biodata}”।</p>
+              <p>বৈবাহিক অবস্থাঃ “{marriedStatus}”।</p>
+              <p>বিভাগঃ “{division}”।</p>
+            </div>
+          </div>
           <div>
-            <div className="grid justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1   mt-3">
+            <div className="grid justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1  bg-gray-50 rounded-3xl mt-3">
               {data.map((singleData) => (
                 <div
                   key={singleData[0]}
-                  className="h-max rounded-xl m-2  text-white p-3"
+                  className="h-max rounded-3xl m-2  text-white p-3 bg-white"
                 >
                   <BiodataCard
                     dataName={singleData[0]}

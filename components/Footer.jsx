@@ -8,15 +8,15 @@ export default function Footer() {
         <div className="">
           <div className="text-center">
             <h1 className="mr-2 text-xl font-mono">
-              The website was created by- 👇
+              The website was created by-
             </h1>
-            <div className="mt-8">
+            <div className="mt-2">
               <Link
                 href="https://www.facebook.com/arifbillah64"
                 passHref
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border font-bold px-4 py-2 text-lg rounded-full underline underline-offset-4 "
+                className="border font-bold px-4 py-2 text-lg rounded-full underline underline-offset-4 text-gray-300"
               >
                 Arif Billah
               </Link>

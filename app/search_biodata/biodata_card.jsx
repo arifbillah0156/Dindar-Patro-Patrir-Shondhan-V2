@@ -4,7 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function BiodataCard({ dataName, dataObj }) {
-  const { formID, boyOrGirl, name, age, division, selectOccupation } = dataObj;
+  const {
+    formID,
+    boyOrGirl,
+    name,
+    age,
+    // division,
+    selectOccupation,
+    // marriedStatus,
+    selectMediumOfEducation,
+  } = dataObj;
 
   return (
     <div className="border rounded-3xl hover:ring-4 hover:ring-blue-400 duration-100">
@@ -58,10 +67,24 @@ export default function BiodataCard({ dataName, dataObj }) {
         {/*  */}
         <div className="flex text-xl gap-3 px-3 border border-t-0  py-2">
           <p className="underline underline-offset-2 decoration-wavy font-bold text-pink-700 pl-4">
+            শিক্ষা মাধ্যম:{""}
+          </p>
+          <p className=" text-purple-950">{selectMediumOfEducation}</p>
+        </div>
+        {/*  */}
+        {/* <div className="flex text-xl gap-3 px-3 border border-t-0  py-2">
+          <p className="underline underline-offset-2 decoration-wavy font-bold text-pink-700 pl-4">
+            বৈবাহিক অবস্থা:{""}
+          </p>
+          <p className=" text-purple-950">{marriedStatus}</p>
+        </div> */}
+        {/*  */}
+        {/* <div className="flex text-xl gap-3 px-3 border border-t-0  py-2">
+          <p className="underline underline-offset-2 decoration-wavy font-bold text-pink-700 pl-4">
             বিভাগ:{""}
           </p>
           <p className=" text-purple-950">{division}</p>
-        </div>
+        </div> */}
         {/*  */}
         <div className="flex text-xl gap-3 px-3 border border-t-0  py-2">
           <p className="underline underline-offset-2 decoration-wavy font-bold text-pink-700 pl-4">

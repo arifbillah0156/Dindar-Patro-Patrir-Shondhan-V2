@@ -65,7 +65,7 @@ export default async function SingleBiodata({ params }) {
 
   return (
     <div>
-      <div className="flex flex-col items-center justify-center bg-gray-100 p-4 text-center border rounded-3xl">
+      <div className="flex flex-col items-center justify-center bg-gray-100 p-4 mt-4 text-center border rounded-3xl">
         <div className="bg-white shadow-md rounded-lg p-6 max-w-4xl w-full">
           <h1 className="text-3xl font-bold text-center mb-6 underline underline-offset-8 decoration-double text-purple-900">
             “সম্পূর্ণ বায়োডাটা”
@@ -79,9 +79,9 @@ export default async function SingleBiodata({ params }) {
             <hr />
             <Text text={"জন্ম তারিখ"} value={birthDate} />
             <hr />
-            <Text text={"উচ্চতা"} value={height} />
-            <hr />
             <Text text={"বৈবাহিক অবস্থা"} value={marriedStatus} />
+            <hr />
+            <Text text={"উচ্চতা"} value={height} />
             <hr />
             <Text text={"শিক্ষা মাধ্যম"} value={selectMediumOfEducation} />
             <hr />
