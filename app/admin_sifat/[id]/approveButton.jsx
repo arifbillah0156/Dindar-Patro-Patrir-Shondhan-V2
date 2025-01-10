@@ -74,7 +74,7 @@ export default function ApproveButton({ dataObj, dataName }) {
       const formIdInput = prompt("Enter form ID: ");
       const newDataObj = {
         date,
-        formId: formIdInput,
+        formID: formIdInput,
         boyOrGirl,
         name,
         mobile,
