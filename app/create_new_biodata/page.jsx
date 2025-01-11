@@ -119,7 +119,7 @@ export default function Home() {
             <form onSubmit={handleSubmit}>
               {/* Gender Select */}
               <div className="p-4  rounded-xl">
-                <label className="text-2xl text-purple-700 mb-4 underline">
+                <label className="text-[28px] text-purple-700 mb-4 underline">
                   আমি একজন: <span className="text-red-600">*</span>
                 </label>
                 <div className="">
@@ -271,6 +271,7 @@ export default function Home() {
                   maxLength={5}
                   placeholder="এভাবে লিখুন = 5.05"
                   className="formInput"
+                  required
                 />
               </div>
               <hr />
@@ -285,6 +286,7 @@ export default function Home() {
                   maxLength={3}
                   placeholder="আপনার ওজন লিখুন... (কেজি)"
                   className="formInput"
+                  required
                 />
               </div>
               <hr />
@@ -299,6 +301,7 @@ export default function Home() {
                   maxLength={20}
                   placeholder="আপনার গায়ের রং...."
                   className="formInput"
+                  required
                 />
                 <hr />
               </div>{" "}
@@ -367,15 +370,13 @@ export default function Home() {
                   maxLength={50}
                   placeholder="...."
                   className="formInput"
+                  required
                 />
                 <hr />
               </div>{" "}
               {/*  */}
               <div>
-                <FormLabel
-                  text={"আপনি কোন মাযহাব অনুসরণ করেন?"}
-                  require="true"
-                />
+                <FormLabel text={"আপনি কোন মাযহাবের অনুসারি?"} />
                 <input
                   type="text"
                   name="mazhab"
@@ -401,6 +402,7 @@ export default function Home() {
                   maxLength={300}
                   placeholder="...."
                   className="formInput"
+                  required
                 />
                 <hr />
               </div>{" "}
@@ -443,6 +445,7 @@ export default function Home() {
               <div>
                 <FormLabel
                   text={"আপনার কি কোনো মানসিক/শারিরিক রোগ/অঙ্গহানী আছে?"}
+                  require="true"
                 />
                 <input
                   type="text"
@@ -452,6 +455,7 @@ export default function Home() {
                   maxLength={200}
                   placeholder="...."
                   className="formInput"
+                  required
                 />
                 <hr />
               </div>{" "}
@@ -461,6 +465,7 @@ export default function Home() {
                   text={
                     "আপনার শখ, পছন্দ, অপছন্দ, রুচিবোধ, স্বপ্ন ইত্যাদি লিখুন।"
                   }
+                  require="true"
                 />
                 <p className="text-pink-500 pl-2 text-justify">
                   ~ এখানে আপনি যত বিস্তারিত লিখবেন, অপর পক্ষের জন্য আপনার
@@ -475,6 +480,7 @@ export default function Home() {
                   maxLength={1500}
                   placeholder="...."
                   className="formInput"
+                  required
                 />
                 <hr />
               </div>{" "}
@@ -534,6 +540,7 @@ export default function Home() {
                   maxLength={300}
                   placeholder="গ্রাম/শহর:-..., থানা:-...., জেলা:...।"
                   className="formInput"
+                  required
                 ></textarea>
               </div>{" "}
               <hr />
@@ -548,12 +555,13 @@ export default function Home() {
                   maxLength={300}
                   placeholder="গ্রাম/শহর:-..., থানা:-...., জেলা:...।"
                   className="formInput"
+                  required
                 ></textarea>
               </div>{" "}
               <hr />
-              {/* স্থায়ী ঠিকানা */}
+              {/* আপনি কোথায় বড় হয়েছেন */}
               <div>
-                <FormLabel text={"আপনি কোথায় বড় হয়েছেন"} require="true" />
+                <FormLabel text={"আপনি কোথায় বড় হয়েছেন"} />
                 <textarea
                   name="growupAddress"
                   rows="2"
@@ -596,14 +604,12 @@ export default function Home() {
                   maxLength={300}
                   placeholder="বিস্তারিত ভাবে লিখুন..."
                   className="formInput"
+                  required
                 />
               </div>{" "}
               <hr />
               <div>
-                <FormLabel
-                  text={"শিক্ষাগত যোগ্যতা (এইচএসসি/সমমান)"}
-                  require="true"
-                />
+                <FormLabel text={"শিক্ষাগত যোগ্যতা (এইচএসসি/সমমান)"} />
                 <p className="text-pink-500 pl-2 text-justify">
                   ~ এইচএসসি/আলিম/সমমান পাসের সন, সাবজেক্ট/গ্রুপ ও
                   ফলাফল/গ্রেড/মার্ক লিখুন
@@ -622,7 +628,6 @@ export default function Home() {
               <div>
                 <FormLabel
                   text={"শিক্ষাগত যোগ্যতা (স্নাতক/ স্নাতক(সম্মান) / সমমান)"}
-                  require="true"
                 />
                 <p className="text-pink-500 pl-2 text-justify">
                   ~ স্নাতক/ স্নাতক (সম্মান) / সমমান) এর পাসের সন, সাবজেক্ট/গ্রুপ
@@ -685,6 +690,7 @@ export default function Home() {
                   maxLength={300}
                   placeholder="আপনার পেশার বিস্তারিত বিবরণ..."
                   className="formInput"
+                  required
                 />
               </div>{" "}
               <hr />
@@ -699,6 +705,7 @@ export default function Home() {
                   maxLength={300}
                   placeholder="আপনার মাসিক ইনকাম লিখুন..."
                   className="formInput"
+                  required
                 />
               </div>{" "}
               <hr />
@@ -795,6 +802,7 @@ export default function Home() {
                   text={
                     "আপনি বা আপনার পরিবার বিয়ের সময় অপর পক্ষের কাছ থেকে কোনো উপহার আশা করবেন?"
                   }
+                  require="true"
                 />
                 <input
                   type="text"
@@ -804,6 +812,7 @@ export default function Home() {
                   maxLength={300}
                   placeholder="...."
                   className="formInput"
+                  required
                 />
               </div>{" "}
               <hr />
@@ -827,6 +836,7 @@ export default function Home() {
                   maxLength={1500}
                   placeholder="আপনি কেমন জীবনসঙ্গী চান বিস্তারিত ভাবে লিখুন..."
                   className="formInput"
+                  required
                 ></textarea>
               </div>{" "}
               <hr />
@@ -836,7 +846,7 @@ export default function Home() {
               </p>
               {/*  */}
               <div>
-                <FormLabel text={"আপনার পিতার নাম"} require="true" />
+                <FormLabel text={"আপনার পিতার নাম"} />
                 <p className="text-pink-500 pl-2 text-justify">
                   ~ এটি ওয়েবসাইটে প্রদর্শিত হবেনা।
                 </p>
@@ -856,7 +866,7 @@ export default function Home() {
               <hr />
               {/*  */}
               <div>
-                <FormLabel text={"পিতার পেশার বিবরণ"} />
+                <FormLabel text={"পিতার পেশার বিবরণ"} require="true" />
                 <input
                   type="text"
                   name="fatherOccupation"
@@ -865,12 +875,13 @@ export default function Home() {
                   maxLength={500}
                   placeholder="অবশ্যই বিস্তারিত লিখুন...."
                   className="formInput"
+                  required
                 />
               </div>{" "}
               <hr />
               {/*  */}
               <div>
-                <FormLabel text={"মাতার পেশার বিবরণ"} />
+                <FormLabel text={"মাতার পেশার বিবরণ"} require="true" />
                 <input
                   type="text"
                   name="motherOccupation"
@@ -879,6 +890,7 @@ export default function Home() {
                   maxLength={300}
                   placeholder="...."
                   className="formInput"
+                  required
                 />
               </div>{" "}
               <hr />
@@ -959,6 +971,7 @@ export default function Home() {
                   maxLength={2000}
                   placeholder="....."
                   className="formInput"
+                  required
                 ></textarea>
               </div>{" "}
               <hr />
@@ -981,6 +994,7 @@ export default function Home() {
                   maxLength={1000}
                   placeholder="....."
                   className="formInput"
+                  required
                 ></textarea>
               </div>{" "}
               <hr />

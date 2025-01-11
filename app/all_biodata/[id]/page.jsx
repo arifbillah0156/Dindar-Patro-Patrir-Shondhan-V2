@@ -112,26 +112,26 @@ export default async function SingleBiodata({ params }) {
             <hr />
             <Text text={"গায়ের রং"} value={bodyColor} />
             <hr />
-            <Text text={"মাহরাম/নন মাহরাম মেনে পর্দা"} value={porda} />
+            <Text text={"মাহরাম/নন মাহরাম মেনে পর্দা করেন?"} value={porda} />
             <hr />
-            <Text text={"সহিহ-শুদ্ধভাবে কোরআন তেলোয়াত"} value={quran} />
+            <Text text={"সহিহ-শুদ্ধভাবে কোরআন তেলোয়াত করেন?"} value={quran} />
             <hr />
-            <Text text={"নিয়মিত পাচঁ ওয়াক্ত নামাজ"} value={namaj} />
+            <Text text={"নিয়মিত পাচঁ ওয়াক্ত নামাজ পড়েন?"} value={namaj} />
             <hr />
-            <Text text={"মাযহাব অনুসরণ"} value={mazhab} />
+            <Text text={"কোন মাযহাবের অনুসারি?"} value={mazhab} />
             <hr />
             <Text
-              text={"অন্যান্য ইসলামি শরিয়াহ্ বিধিবিধান মেনে চলা"}
+              text={"অন্যান্য ইসলামি শরিয়াহ্ বিধিবিধান মেনে চলেন?"}
               value={islamiShoriah}
             />
             <hr />
             <Text
-              text={"দ্বীনের কোনো বিশেষ মেহনতে যুক্ত থাকা"}
+              text={"দ্বীনের কোনো বিশেষ মেহনতে যুক্ত আছেন?"}
               value={dinerKaj}
             />
             <hr />
             <Text
-              text={"নাটক/সিনেমা/সিরিয়াল/গান দেখা বা শুনা"}
+              text={"নাটক/সিনেমা/সিরিয়াল/গান দেখেন বা শুনেন?"}
               value={watchNatok}
             />
             <hr />
@@ -155,11 +155,11 @@ export default async function SingleBiodata({ params }) {
             <hr />
             <Text text={"স্থায়ী ঠিকানা"} value={permanentAddress} />
             <hr />
-            <Text text={"কোথায় বড় হয়েছেন"} value={growupAddress} />
+            <Text text={"কোথায় বড় হয়েছেন?"} value={growupAddress} />
             <hr />
             {boyOrGirl === "পাত্র" && (
               <div>
-                <Text text={"সুন্নতি দাড়ি"} value={dari} />
+                <Text text={"সুন্নতি দাড়ি আছে?"} value={dari} />
                 <hr />
                 <Text
                   text={"বিয়ের পর স্ত্রীকে পর্দায় রাখবেন?"}
@@ -191,7 +191,7 @@ export default async function SingleBiodata({ params }) {
             <Text text={"যেমন জীবনসঙ্গী চাই"} value={partnerDetails} />
             <hr />
             <Text
-              text={"অভিভাবকের সম্মতি আছে কিনা"}
+              text={"অভিভাবকের সম্মতি আছে কিনা?"}
               value={guardianPermission}
             />
             <hr />

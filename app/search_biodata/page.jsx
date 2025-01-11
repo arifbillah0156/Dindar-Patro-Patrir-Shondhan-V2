@@ -52,7 +52,7 @@ const DataComponent = () => {
       {data ? (
         <div className="">
           <div className="w-full text-center">
-            <h1 className="px-2 py-4 text-3xl text-purple-800 underline underline-offset-8 decoration-wavy">
+            <h1 className="px-2 py-4 text-3xl text-purple-800 underline underline-offset-8 decoration-double">
               “{dataLen} টি বায়োডাটা”
             </h1>
             <p className="text-pink-700 text-lg px-4 underline">

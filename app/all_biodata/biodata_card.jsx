@@ -87,7 +87,7 @@ export default function BiodataCard({ dataName, dataObj }) {
         </div>
       </div>
       {/* Footer */}
-      <div className="w-full text-center m-6">
+      <div className="text-center m-6">
         <Link
           href={`/all_biodata/${dataName}`}
           className="text-white p-3 px-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl text-lg hover:ring-2 hover:underline"

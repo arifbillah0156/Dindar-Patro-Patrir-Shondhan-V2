@@ -64,10 +64,10 @@ body {
 }
 
 .genderText {
-  color: purple;
+  color: rgb(120, 4, 230);
   text-decoration: underline;
-  text-underline-offset: 3px;
-  font-size: 20px;
+  text-underline-offset: 4px;
+  font-size: 24px;
 }
 
 .radio-container input {
@@ -97,7 +97,7 @@ body {
 }
 
 .radio-container input:checked ~ .checkmark {
-  background-color: #007bff;
+  background-color: #b007c7;
 }
 
 .checkmark:after {
