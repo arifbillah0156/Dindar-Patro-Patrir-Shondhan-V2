@@ -163,7 +163,7 @@ export default function Home() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  maxLength={20}
+                  maxLength={100}
                   placeholder="আপনার নাম লিখুন..."
                   className="formInput"
                   required
