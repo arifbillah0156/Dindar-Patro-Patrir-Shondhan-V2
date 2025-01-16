@@ -186,7 +186,33 @@ export default async function SingleBiodata({ params }) {
               value={marriedGift}
             />
             <hr />
-            <Text text={"যেমন জীবনসঙ্গী চাই"} value={partnerDetails} />
+            <Text text={"প্রত্যাশিত জীবনসঙ্গীর বয়স কত চান?"} value={new1} />
+            <hr />
+            <Text text={"প্রত্যাশিত জীবনসঙ্গীর উচ্চতা কত চান?"} value={new2} />
+            <hr />
+            <Text text={"প্রত্যাশিত জীবনসঙ্গীর ওজন কত চান?"} value={new3} />
+            <hr />
+            <Text
+              text={"প্রত্যাশিত জীবনসঙ্গীর গায়ের রং কেমন চান?"}
+              value={new4}
+            />
+            <hr />
+            <Text text={"প্রত্যাশিত জীবনসঙ্গীর জেলা কোথায় চান?"} value={new5} />
+            <hr />
+            <Text
+              text={"প্রত্যাশিত জীবনসঙ্গীর শিক্ষাগত যোগ্যতা কেমন চান?"}
+              value={new6}
+            />
+            <hr />
+            <Text
+              text={"প্রত্যাশিত জীবনসঙ্গীর বৈবাহিক অবস্থা কেমন চান?"}
+              value={new7}
+            />
+            <hr />
+            <Text
+              text={"প্রত্যাশিত জীবনসঙ্গী সম্পর্কে অন্যান্য তথ্য"}
+              value={partnerDetails}
+            />
             <hr />
             <Text text={"পিতার নাম"} value={fatherName} />
             <hr />

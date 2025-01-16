@@ -816,30 +816,6 @@ export default function Home() {
                 />
               </div>{" "}
               <hr />
-              {/* আপনি কেমন জীবনসঙ্গী চান */}
-              <div>
-                <FormLabel text={"আপনি কেমন জীবনসঙ্গী চান"} require="true" />
-                <p className="text-pink-500 pl-2 text-justify">
-                  ~ আপনার প্রত্যাশিত জীবনসঙ্গীর বয়স, গায়ের রং, উচ্চতা, শিক্ষাগত
-                  যোগ্যতা, বৈবাহিক অবস্থা, পেশা, তার জেলা, বৈশিষ্ট/গুণাবলী,
-                  অর্থনৈতিক অবস্থা ইত্যাদি কেমন চান এই বিষয়ে বিস্তারিত লিখুন।
-                </p>
-                <p className="text-pink-500 pl-2 text-justify">
-                  ~ “যেকোনো”, “মানান-সই” ইত্যাদি না লিখে আপনি কেমন জীবনসঙ্গী চান
-                  বিস্তারিত লিখুন।
-                </p>
-                <textarea
-                  name="partnerDetails"
-                  rows="3"
-                  value={formData.partnerDetails}
-                  onChange={handleChange}
-                  maxLength={1500}
-                  placeholder="আপনি কেমন জীবনসঙ্গী চান বিস্তারিত ভাবে লিখুন..."
-                  className="formInput"
-                  required
-                ></textarea>
-              </div>{" "}
-              <hr />
               {/* পারিবারিক তথ্য */}
               <p className="text-center m-4 text-xl underline decoration-wavy underline-offset-4 text-gray-600">
                 “পারিবারিক তথ্য”
@@ -993,6 +969,159 @@ export default function Home() {
                   onChange={handleChange}
                   maxLength={1000}
                   placeholder="....."
+                  className="formInput"
+                  required
+                ></textarea>
+              </div>{" "}
+              <hr />
+              {/* প্রত্যাশিত জীবনসঙ্গী */}
+              <p className="text-center m-4 text-xl underline decoration-wavy underline-offset-4 text-gray-600">
+                “প্রত্যাশিত জীবনসঙ্গী”
+              </p>{" "}
+              {/* জীবনসঙ্গীর বয়স */}
+              <div>
+                <FormLabel
+                  text={"প্রত্যাশিত জীবনসঙ্গীর বয়স লিখুন"}
+                  require="true"
+                />
+                <input
+                  type="text"
+                  name="new1"
+                  value={formData.new1}
+                  onChange={handleChange}
+                  maxLength={100}
+                  placeholder="প্রত্যাশিত জীবনসঙ্গীর বয়স..."
+                  className="formInput"
+                  required
+                />
+                <hr />
+              </div>
+              {/* জীবনসঙ্গীর উচ্চতা */}
+              <div>
+                <FormLabel
+                  text={"প্রত্যাশিত জীবনসঙ্গীর উচ্চতা লিখুন"}
+                  require="true"
+                />
+                <input
+                  type="text"
+                  name="new2"
+                  value={formData.new2}
+                  onChange={handleChange}
+                  maxLength={100}
+                  placeholder="প্রত্যাশিত জীবনসঙ্গীর উচ্চতা..."
+                  className="formInput"
+                  required
+                />
+                <hr />
+              </div>
+              {/* জীবনসঙ্গীর ওজন */}
+              <div>
+                <FormLabel
+                  text={"প্রত্যাশিত জীবনসঙ্গীর ওজন লিখুন"}
+                  require="true"
+                />
+                <input
+                  type="text"
+                  name="new3"
+                  value={formData.new3}
+                  onChange={handleChange}
+                  maxLength={100}
+                  placeholder="প্রত্যাশিত জীবনসঙ্গীর ওজন..."
+                  className="formInput"
+                  required
+                />
+                <hr />
+              </div>
+              {/* জীবনসঙ্গীর গাত্রবর্ন */}
+              <div>
+                <FormLabel
+                  text={"প্রত্যাশিত জীবনসঙ্গীর গায়ের রং লিখুন"}
+                  require="true"
+                />
+                <input
+                  type="text"
+                  name="new4"
+                  value={formData.new4}
+                  onChange={handleChange}
+                  maxLength={100}
+                  placeholder="জীবনসঙ্গীর গায়ের রং কেমন চান..."
+                  className="formInput"
+                  required
+                />
+                <hr />
+              </div>
+              {/* জীবনসঙ্গীর জেলা */}
+              <div>
+                <FormLabel
+                  text={"প্রত্যাশিত জীবনসঙ্গীর জেলা লিখুন"}
+                  require="true"
+                />
+                <input
+                  type="text"
+                  name="new5"
+                  value={formData.new5}
+                  onChange={handleChange}
+                  maxLength={100}
+                  placeholder="জীবনসঙ্গীর জেলা কোথায় চান..."
+                  className="formInput"
+                  required
+                />
+                <hr />
+              </div>
+              {/* জীবনসঙ্গীর জেলা */}
+              <div>
+                <FormLabel
+                  text={"প্রত্যাশিত জীবনসঙ্গীর শিক্ষাগত যোগ্যতা লিখুন"}
+                  require="true"
+                />
+                <input
+                  type="text"
+                  name="new6"
+                  value={formData.new6}
+                  onChange={handleChange}
+                  maxLength={300}
+                  placeholder="জীবনসঙ্গীর শিক্ষাগত যোগ্যতা কিরকম চান..."
+                  className="formInput"
+                  required
+                />
+                <hr />
+              </div>
+              {/* প্রত্যাশিত জীবনসঙ্গীর বৈবাহিক অবস্থা */}
+              <div>
+                <FormLabel
+                  text={"প্রত্যাশিত জীবনসঙ্গীর বৈবাহিক অবস্থা কেমন চান?"}
+                  require="true"
+                />
+                <select
+                  name="new7"
+                  value={formData.new7}
+                  onChange={handleChange}
+                  className="formSelect"
+                  required
+                >
+                  <SelectMarriedStatus />
+                </select>
+              </div>{" "}
+              <hr />
+              {/* আপনি কেমন জীবনসঙ্গী চান */}
+              <div>
+                <FormLabel
+                  text={
+                    "আপনার প্রত্যাশিত জীবনসঙ্গী সম্পর্কে আর কিছু লেখার থাকলে এখানে লিখুন"
+                  }
+                  require="true"
+                />
+                <p className="text-pink-500 pl-2 text-justify">
+                  ~ আপনার প্রত্যাশিত জীবনসঙ্গীর পেশা, বৈশিষ্ট/গুণাবলী, অর্থনৈতিক
+                  অবস্থা ইত্যাদি কেমন চান এই বিষয়ে বিস্তারিত লিখুন।
+                </p>
+                <textarea
+                  name="partnerDetails"
+                  rows="3"
+                  value={formData.partnerDetails}
+                  onChange={handleChange}
+                  maxLength={500}
+                  placeholder="আপনার প্রত্যাশিত জীবনসঙ্গী সম্পর্কে আর কিছু লেখার থাকলে এখানে লিখুন..."
                   className="formInput"
                   required
                 ></textarea>
