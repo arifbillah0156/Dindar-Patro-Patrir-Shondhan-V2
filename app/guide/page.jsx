@@ -2,14 +2,14 @@ import GuideSection from "./guideSection";
 export default function Guide() {
   return (
     <div
-      className="h-max w-[100%] bg-cover bg-center transition-all duration-1000 py-12 mb-[-50px] rounded-3xl"
+      className="h-max w-[100%] bg-cover bg-center transition-all duration-1000 py-12 mb-[-41px] rounded-3xl"
       style={{
-        backgroundImage: `url(/Images/BG2.jpg)`,
+        backgroundImage: `url(/Images/BG3.jpg)`,
       }}
     >
       <header className="py-4">
         <div className="container mx-auto px-4">
-          <h1 className="text-2xl font-bold underline decoration-double text-gray-900">
+          <h1 className="text-2xl font-bold underline decoration-double text-gray-900 bg-white w-max px-6  py-4 rounded-lg decoration-pink-400 underline-offset-4">
             ~সাধারণ নির্দেশিকা~
           </h1>
         </div>
