@@ -66,13 +66,13 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center">
+            <div className="md:hidden flex items-center mr-4">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="text-white focus:outline-none"
               >
                 <svg
-                  className="w-8 h-8"
+                  className="w-10 h-10"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
