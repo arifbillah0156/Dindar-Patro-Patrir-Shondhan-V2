@@ -12,7 +12,10 @@ export default function HomeAddBiodata() {
       >
         <Link
           href={"/create_new_biodata"}
-          className="text-2xl sm:text-4xl bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500 text-white px-12 py-8 rounded-full shadow-lg shadow-rose-300 block"
+          className="text-2xl sm:text-4xl text-white px-12 py-8 rounded-full shadow-lg shadow-rose-300 block  bg-cover bg-center transition-all duration-1000"
+          style={{
+            backgroundImage: `url(/Images/PlusBioBG.jpg)`,
+          }}
         >
           + বায়োডাটা তৈরি করুন
         </Link>

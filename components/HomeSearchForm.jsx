@@ -36,7 +36,10 @@ export default function HomeSearchForm() {
     <div className="mt-14 ">
       <form
         onSubmit={handleSubmit}
-        className="max-w-md mx-auto p-6 bg-white border shadow-md rounded-lg space-y-4"
+        className="max-w-md mx-auto p-6 bg-cover bg-center transition-all duration-1000 border shadow-md rounded-lg space-y-4"
+        style={{
+          backgroundImage: `url(/Images/HomeTextBG.jpg)`,
+        }}
       >
         <div className="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-pulse px-0 py-3 font-bold">
           <h1 className="underline decoration-purple-500">“বায়োডাটা খুজুন”</h1>

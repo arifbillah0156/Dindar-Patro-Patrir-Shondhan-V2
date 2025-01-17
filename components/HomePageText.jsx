@@ -26,8 +26,11 @@ export default function HomePageText() {
 
       {/* উপদেশ */}
       <div
-        className="p-2 bg-[#FBFBFB] shadow-lg shadow-pink-100 rounded-3xl"
+        className="p-2  shadow-lg shadow-pink-100 rounded-3xl h-max w-[100%] bg-cover bg-center transition-all duration-1000"
         title="আপনি বিয়ে করতে চাইলে আমরা আপনাকে পাত্র/পাত্রী খুজতে সাহায্য করতে পারি।😉"
+        style={{
+          backgroundImage: `url(/Images/HomeTextBG.jpg)`,
+        }}
       >
         <p className="text-2xl sm:text-4xl p-4  font-bold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-pulse text-center ">
           {" "}
