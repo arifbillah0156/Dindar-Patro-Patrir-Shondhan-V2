@@ -4,7 +4,7 @@ export default function Guide() {
     <div
       className="h-max w-[100%] bg-cover bg-center transition-all duration-1000 py-12 mb-[-41px] rounded-3xl"
       style={{
-        backgroundImage: `url(/Images/BG3.jpg)`,
+        backgroundImage: `url(/Images/GuideBG.jpg)`,
       }}
     >
       <header className="py-4">
