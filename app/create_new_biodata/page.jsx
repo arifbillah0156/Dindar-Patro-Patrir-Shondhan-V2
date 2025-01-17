@@ -1092,6 +1092,23 @@ export default function Home() {
                   text={"প্রত্যাশিত জীবনসঙ্গীর বৈবাহিক অবস্থা কেমন চান?"}
                   require="true"
                 />
+                <input
+                  type="text"
+                  name="new7"
+                  value={formData.new7}
+                  onChange={handleChange}
+                  maxLength={200}
+                  placeholder="জীবনসঙ্গীর বৈবাহিক অবস্থা কিরকম চান..."
+                  className="formInput"
+                  required
+                />
+                <hr />
+              </div>
+              {/* <div>
+                <FormLabel
+                  text={"প্রত্যাশিত জীবনসঙ্গীর বৈবাহিক অবস্থা কেমন চান?"}
+                  require="true"
+                />
                 <select
                   name="new7"
                   value={formData.new7}
@@ -1101,7 +1118,7 @@ export default function Home() {
                 >
                   <SelectMarriedStatus />
                 </select>
-              </div>{" "}
+              </div>{" "} */}
               <hr />
               {/* আপনি কেমন জীবনসঙ্গী চান */}
               <div>
