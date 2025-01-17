@@ -78,7 +78,7 @@ export default function Home() {
     new4: "",
     new5: "",
     new6: "",
-    new7: "",
+    new7: "অবিবাহিত",
     new8: "",
     new9: "",
   });
