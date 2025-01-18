@@ -1,5 +1,6 @@
 import ApproveButton from "./approveButton.jsx";
 import DeleteButton from "./deleteButton.jsx";
+import EditButton from "./editButton.jsx";
 import data from "./getData.jsx";
 import Text from "./single_text.jsx";
 
@@ -252,6 +253,9 @@ export default async function SingleBiodata({ params }) {
           <div className="w-full grid justify-between grid-cols-2 gap-4 items-center">
             <ApproveButton dataObj={fullData} dataName={id} />
             <DeleteButton dataName={id} dataUserName={name} />
+          </div>
+          <div>
+            <EditButton dataObj={fullData} dataName={id} />
           </div>
         </div>
       </div>
