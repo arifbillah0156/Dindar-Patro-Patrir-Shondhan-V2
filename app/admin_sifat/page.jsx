@@ -7,6 +7,7 @@ import Loading from "../loading";
 
 const DataComponent = () => {
   const [data, setData] = useState(null);
+  const [deleteBiodataId, setDeleteBiodataId] = useState("");
 
   useEffect(() => {
     const checkPass = prompt("Enter 8 digit PIN: ");
@@ -28,6 +29,32 @@ const DataComponent = () => {
     }
   }, []);
 
+  const handleChangeForDlt = (e) => {
+    setDeleteBiodataId(e.target.value);
+  };
+
+  const deleteBiodata = (e) => {
+    e.preventDefault();
+    const checkPass = prompt("Enter 8 digit PIN: ");
+    if (checkPass === process.env.NEXT_PUBLIC_ADMIN_PASS) {
+      if (confirm(`Bro! Are u sure to delete "${deleteBiodataId}" Biodata??`)) {
+        fetch(
+          `${process.env.NEXT_PUBLIC_DB_URL}/ApprovedBiodata/-${deleteBiodataId}.json`,
+          {
+            method: "DELETE",
+          }
+        )
+          .then(() => {
+            alert("Deleted the Biodata!!");
+            setDeleteBiodataId("");
+          })
+          .catch(() => alert("Error! Contact with Arif Billah."));
+      } else {
+        alert("not delete, be careful bro!!");
+      }
+    }
+  };
+
   return (
     <div>
       {data ? (
@@ -36,7 +63,23 @@ const DataComponent = () => {
             <h1 className="px-2 py-4 text-3xl text-purple-800 underline underline-offset-8 decoration-wavy">
               “সমস্ত বায়োডাটা”
             </h1>
-          </div>
+          </div>{" "}
+          <hr />
+          <form onSubmit={deleteBiodata} className="py-4 text-center">
+            <input
+              type="text"
+              placeholder="OGyEFg......"
+              onChange={handleChangeForDlt}
+              className="border border-purple-600 p-3 rounded-md mr-4"
+            />
+            <button
+              type="submit"
+              className="px-4 py-3 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-opacity-75 active:bg-red-700 transition-all duration-300 ease-in-out text-xl  overflow-hidden"
+            >
+              Delete
+            </button>
+          </form>{" "}
+          <hr />
           <div>
             <div className="grid justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1   mt-3">
               {data.map((singleData) => (

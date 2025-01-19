@@ -32,7 +32,7 @@ export default function HomePageText() {
           backgroundImage: `url(/Images/HomeTextBG.jpg)`,
         }}
       >
-        <p className="text-2xl sm:text-4xl p-4  font-bold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-pulse text-center ">
+        <p className="text-2xl sm:text-4xl p-4  font-bold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-pulse text-center">
           {" "}
           “আপনি অবিবাহিত হলে বিবাহ করে অর্ধেক দ্বীন পূরন করুন, বাকি অর্ধেকের
           জন্য আল্লাহকে ভয় করুন।”

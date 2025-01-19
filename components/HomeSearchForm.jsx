@@ -24,12 +24,6 @@ export default function HomeSearchForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const searchDataArray = [
-      e.target[0].value,
-      e.target[1].value,
-      e.target[2].value,
-    ];
-    console.log(searchDataArray);
   };
 
   return (
@@ -42,7 +36,9 @@ export default function HomeSearchForm() {
         }}
       >
         <div className="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-pulse px-0 py-3 font-bold">
-          <h1 className="underline decoration-purple-500">“বায়োডাটা খুজুন”</h1>
+          <h1 className="underline decoration-purple-500 underline-offset-[12px] decoration-double mb-3">
+            “বায়োডাটা খুজুন”
+          </h1>
         </div>
         {/* লেবেল - আমি খুজছি */}
         <div>
