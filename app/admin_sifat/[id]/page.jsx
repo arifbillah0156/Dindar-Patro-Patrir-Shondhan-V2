@@ -1,5 +1,6 @@
 import ApproveButton from "./approveButton.jsx";
 import DeleteButton from "./deleteButton.jsx";
+import DeleteButtonForEditBiodata from "./deleteBtnForEditBiodata.jsx";
 import EditButton from "./editButton.jsx";
 import data from "./getData.jsx";
 import Text from "./single_text.jsx";
@@ -77,6 +78,24 @@ export default async function SingleBiodata({ params }) {
   return (
     <div>
       <div className="flex flex-col items-center justify-center bg-gray-100 p-4 text-center border rounded-3xl">
+        {/* সংশোধনের আবেদন */}
+        {fullData.edit === "true" && (
+          <div className="text-2xl text-red-600 p-2">
+            <p>
+              এটি একটি সংশোধনের আবেদন, এটিকে এপ্রুভ করার পূর্বে প্রথমে আগের
+              এপ্রুভ করা বায়োডাটাটি ডিলিট করো।
+            </p>
+            <p className="text-lg">{fullData.editID}</p>
+            <p className="text-blue-600 font-bold text-[28px] underline mb-2">
+              ফরম আইডি: {fullData.formID}{" "}
+            </p>
+            <DeleteButtonForEditBiodata
+              dataName={fullData.editID}
+              dataUserName={name}
+            />
+          </div>
+        )}
+
         <div className="bg-white shadow-md rounded-lg p-6 max-w-4xl w-full">
           <h1 className="text-2xl font-bold text-center mb-4 underline underline-offset-8 decoration-double text-gray-900">
             সম্পূর্ণ বায়োডাটা

@@ -13,74 +13,143 @@ import SelectOccupation from "@/components/selectOccupation";
 import SubmitBtn, { SubmitBtnDisable } from "./submitBtn";
 import SubmitWelcome from "./submitWelcomePage";
 
-export default function Home() {
+export default function FormSectionForEdit({ biodata, uid }) {
   const [isChecked, setIsChecked] = useState(true);
   const [submitted, setSubmitted] = useState(false);
 
+  const {
+    date,
+    boyOrGirl,
+    formID,
+    name,
+    mobile,
+    email,
+    age,
+    height,
+    weight,
+    birthID,
+    birthDate,
+    address,
+    permanentAddress,
+    growupAddress,
+    bodyColor,
+    bloodGroup,
+    islamiShoriah,
+    dinerKaj,
+    watchNatok,
+    sharirikRog,
+    marriedStatus,
+    dari,
+    porda,
+    quran,
+    namaj,
+    mazhab,
+    division,
+    sscEducation,
+    hscEducation,
+    honorsEducation,
+    education,
+    selectMediumOfEducation,
+    selectOccupation,
+    occupation,
+    monthlyIncome,
+    guardianPermission,
+    shokh,
+    wifePorda,
+    wifeEducation,
+    wifeJob,
+    wifeLeaving,
+    marriedGift,
+    personalDetails,
+    familyDetails,
+    partnerDetails,
+    fbLink,
+    extra,
+    fatherName,
+    fatherOccupation,
+    motherOccupation,
+    brotherDetails,
+    sisterDetails,
+    mamaDetails,
+    familyDiniPoribesh,
+    new1,
+    new2,
+    new3,
+    new4,
+    new5,
+    new6,
+    new7,
+    new8,
+    new9,
+  } = biodata;
+
   const [formData, setFormData] = useState({
     id: `#${Date.now() + Math.floor(Math.random() * 30)}`,
-    date: `${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}`,
-    boyOrGirl: "পাত্র",
-    name: "",
-    mobile: "",
-    email: "",
-    age: "",
-    height: "",
-    weight: "",
-    birthID: "",
-    birthDate: "",
-    address: "",
-    permanentAddress: "",
-    growupAddress: "",
-    bodyColor: "",
-    bloodGroup: "A+",
-    islamiShoriah: "",
-    dinerKaj: "",
-    watchNatok: "",
-    sharirikRog: "",
-    marriedStatus: "অবিবাহিত",
-    dari: "",
-    porda: "",
-    quran: "",
-    namaj: "",
-    mazhab: "",
-    division: "ঢাকা",
-    sscEducation: "",
-    hscEducation: "",
-    honorsEducation: "",
-    education: "",
-    selectMediumOfEducation: "জেনারেল",
-    selectOccupation: "ইমাম",
-    occupation: "",
-    monthlyIncome: "",
-    guardianPermission: "",
-    shokh: "",
-    wifePorda: "",
-    wifeEducation: "",
-    wifeJob: "",
-    wifeLeaving: "",
-    marriedGift: "",
-    personalDetails: "",
-    familyDetails: "",
-    partnerDetails: "",
-    fbLink: "",
-    extra: "",
-    fatherName: "",
-    fatherOccupation: "",
-    motherOccupation: "",
-    brotherDetails: "",
-    sisterDetails: "",
-    mamaDetails: "",
-    familyDiniPoribesh: "",
-    new1: "",
-    new2: "",
-    new3: "",
-    new4: "",
-    new5: "",
-    new6: "",
-    new7: "অবিবাহিত",
-    new8: "",
-    new9: "",
+    date,
+    boyOrGirl,
+    formID,
+    name,
+    mobile,
+    email,
+    age,
+    height,
+    weight,
+    birthID,
+    birthDate,
+    address,
+    permanentAddress,
+    growupAddress,
+    bodyColor,
+    bloodGroup,
+    islamiShoriah,
+    dinerKaj,
+    watchNatok,
+    sharirikRog,
+    marriedStatus,
+    dari,
+    porda,
+    quran,
+    namaj,
+    mazhab,
+    division,
+    sscEducation,
+    hscEducation,
+    honorsEducation,
+    education,
+    selectMediumOfEducation,
+    selectOccupation,
+    occupation,
+    monthlyIncome,
+    guardianPermission,
+    shokh,
+    wifePorda,
+    wifeEducation,
+    wifeJob,
+    wifeLeaving,
+    marriedGift,
+    personalDetails,
+    familyDetails,
+    partnerDetails,
+    fbLink,
+    extra,
+    fatherName,
+    fatherOccupation,
+    motherOccupation,
+    brotherDetails,
+    sisterDetails,
+    mamaDetails,
+    familyDiniPoribesh,
+    new1,
+    new2,
+    new3,
+    new4,
+    new5,
+    new6,
+    new7,
+    new8,
+    new9,
+    edit: "true",
+    editID: uid,
   });
 
   const handleChange = (e) => {
@@ -170,41 +239,6 @@ export default function Home() {
                 />
                 <hr />
               </div>{" "}
-              {/* মোবাইল নাম্বার */}
-              <div>
-                <FormLabel text={"মোবাইল নাম্বার"} require="true" />
-                <p className="text-pink-500 pl-2 text-justify">
-                  ~ আপনার মোবাইল নাম্বার ওয়েবসাইটে প্রদর্শিত হবেনা।
-                </p>
-                <input
-                  type="tel"
-                  name="mobile"
-                  value={formData.mobile}
-                  onChange={handleChange}
-                  maxLength={20}
-                  placeholder="আপনার সচল মোবাইল নাম্বার..."
-                  className="formInput"
-                  required
-                />
-              </div>
-              <hr />
-              {/* Email */}
-              <div>
-                <FormLabel text={"ই-মেইল"} />
-                <p className="text-pink-500 pl-2 text-justify">
-                  ~ আপনার ই-মেইল ওয়েবসাইটে প্রদর্শিত হবেনা।
-                </p>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  maxLength={100}
-                  placeholder="আপনার ইমেইল লিখুন..."
-                  className="formInput"
-                />
-              </div>
-              <hr />
               {/* বৈবাহিক অবস্থা */}
               <div>
                 <FormLabel text={"বৈবাহিক অবস্থা"} require="true" />
@@ -242,23 +276,6 @@ export default function Home() {
                   name="birthDate"
                   value={formData.birthDate}
                   onChange={handleChange}
-                  className="formInput"
-                />
-              </div>
-              <hr />
-              {/* জন্ম নিবন্ধন নাম্বার */}
-              <div>
-                <FormLabel text={"আপনার জন্ম নিবন্ধন নাম্বার"} />
-                <p className="text-pink-500 pl-2 text-justify">
-                  ~ এটি ওয়েবসাইটে প্রদর্শিত হবেনা।
-                </p>
-                <input
-                  type="number"
-                  name="birthID"
-                  value={formData.birthID}
-                  onChange={handleChange}
-                  maxLength={20}
-                  placeholder="(অনলাইন হতে হবে) ....."
                   className="formInput"
                 />
               </div>
@@ -825,26 +842,6 @@ export default function Home() {
               </p>
               {/*  */}
               <div>
-                <FormLabel text={"আপনার পিতার নাম"} />
-                <p className="text-pink-500 pl-2 text-justify">
-                  ~ এটি ওয়েবসাইটে প্রদর্শিত হবেনা।
-                </p>
-                <p className="text-pink-500 pl-2 text-justify">
-                  ~ আপনার পিতা মৃত হলে নামের পূর্বে “মরহুম” লিখুন।
-                </p>
-                <input
-                  type="text"
-                  name="fatherName"
-                  value={formData.fatherName}
-                  onChange={handleChange}
-                  maxLength={100}
-                  placeholder="...."
-                  className="formInput"
-                />
-              </div>{" "}
-              <hr />
-              {/*  */}
-              <div>
                 <FormLabel text={"পিতার পেশার বিবরণ"} require="true" />
                 <input
                   type="text"
@@ -1148,40 +1145,7 @@ export default function Home() {
               </div>{" "}
               <hr />
               {/* */}
-              <div>
-                <FormLabel text={"ফেসবুক আইডি লিংক"} />
-                <p className="text-pink-500 pl-2 text-justify">
-                  ~ এটি ওয়েবসাইটে প্রদর্শিত হবেনা।
-                </p>
-                <input
-                  type="text"
-                  name="fbLink"
-                  value={formData.fbLink}
-                  onChange={handleChange}
-                  maxLength={100}
-                  placeholder="আপনার ফেসবুক আইডির লিংক দিন..."
-                  className="formInput"
-                />
-              </div>{" "}
-              <hr />
               {/* */}
-              <div>
-                <FormLabel text={"এক্সট্রা কিছু লিখতে পারেন"} />
-                <p className="text-pink-500 pl-2 text-justify">
-                  ~ আমাদের নিকট অন্য কিছু বলার থাকলে এখানে লিখুন, এটি শুধুমাত্র
-                  এডমিনরা দেখতে পাবে, আপনার বায়োডাটায় এটি যুক্ত হবে না।
-                </p>
-                <input
-                  type="text"
-                  name="extra"
-                  value={formData.extra}
-                  onChange={handleChange}
-                  maxLength={100}
-                  placeholder="এক্সট্রা কিছু লিখতে পারেন..."
-                  className="formInput"
-                />
-              </div>{" "}
-              <hr />
               {/*  */}
               {/*  */}
               {/*  */}
