@@ -4,6 +4,7 @@ import { get, ref } from "firebase/database";
 import { database } from "@/lib/firebase";
 import BiodataCard from "./biodata_card";
 import Loading from "../loading";
+import Message from "./Message";
 
 const DataComponent = () => {
   const [data, setData] = useState(null);
@@ -18,7 +19,6 @@ const DataComponent = () => {
           if (snapshot.exists()) {
             const snapData = Object.entries(snapshot.val());
             setData(snapData.reverse());
-            console.log(snapData[0][1].date);
           } else {
             alert("Somthing wrong! No data found!!");
           }
@@ -60,7 +60,7 @@ const DataComponent = () => {
   return (
     <div>
       {data ? (
-        <div className="">
+        <div className="overflow-hidden">
           <div className="w-full text-center">
             <h1 className="px-2 py-4 text-3xl text-purple-800 underline underline-offset-8 decoration-wavy">
               “সমস্ত বায়োডাটা”
@@ -97,6 +97,7 @@ const DataComponent = () => {
               ))}
             </div>
           </div>
+          <Message />
         </div>
       ) : (
         <Loading />
