@@ -1,3 +1,4 @@
+"use client";
 import GuideSection from "./guideSection";
 export default function Guide() {
   return (
@@ -42,12 +43,18 @@ export default function Guide() {
             <li>
               প্রথমে আমাদের বিকাশ/নগদ পার্সোনাল নাম্বারে{" "}
               <s
-                title="বর্তমানে ১৫০ টাকা ডিসকাউন্ট দেওয়া হচ্ছে!"
-                className="px-2 cursor-pointer"
+                onClick={() =>
+                  alert("বর্তমানে 3৫০ টাকা ডিসকাউন্ট দেওয়া হচ্ছে!")
+                }
+                title="বর্তমানে 3৫০ টাকা ডিসকাউন্ট দেওয়া হচ্ছে!"
+                className="px-2 cursor-pointer text-pink-600"
               >
-                ২০০
+                ৪০০
               </s>{" "}
-              ৫০ (পঞ্চাশ) টাকা সেন্ড মানি করতে হবে।
+              <span className="underline underline-offset-[6px] text-xl">
+                ৫০ (পঞ্চাশ)
+              </span>{" "}
+              টাকা সেন্ড মানি করতে হবে।
             </li>
             <li>
               আমাদের বিকাশ/নগদ পার্সোনাল নাম্বার:-{" "}

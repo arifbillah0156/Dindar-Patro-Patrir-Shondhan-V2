@@ -61,10 +61,7 @@ export default function Navbar() {
                   নির্দেশনা
                 </Link>
                 <Link
-                  href="https://www.facebook.com/DeendarPatraPatrisandhan"
-                  passHref
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/contact"
                   className="text-xl hover:underline mx-2 px-3 py-2  rounded-full focus:underline"
                 >
                   যোগাযোগ
@@ -137,10 +134,7 @@ export default function Navbar() {
                     নির্দেশনা
                   </Link>
                   <Link
-                    href="https://www.facebook.com/DeendarPatraPatrisandhan"
-                    passHref
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/contact"
                     onClick={() => setTimeout(() => setIsOpen(!isOpen), 50)}
                     className="text-xl hover:underline focus:underline"
                   >
