@@ -68,12 +68,13 @@ export default async function SingleBiodata({ params }) {
     <div>
       <div className="flex flex-col items-center justify-center bg-gray-100 p-4 mt-4 text-center border rounded-3xl">
         <div className="bg-white shadow-md rounded-lg p-6 max-w-4xl w-full">
+          <div className="p-4 text-3xl bg-blue-100 text-blue-700 rounded-md shadow-md tracking-wider font-mono">
+            ID: "{formID}"
+          </div>{" "}
+          <br />
           <h1 className="text-3xl font-bold text-center mb-6 underline underline-offset-8 decoration-double text-purple-900">
             “সম্পূর্ণ বায়োডাটা”
           </h1>
-          <h2 className="text-xl font-bold text-center mb-6 underline underline-offset-8 decoration-dotted text-blue-600 tracking-wider">
-            ID: <span className="text-2xl">{formID}</span>
-          </h2>
           <div className="space-y-4">
             {" "}
             <hr />
