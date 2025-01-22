@@ -52,6 +52,8 @@ const DataComponent = () => {
       } else {
         alert("not delete, be careful bro!!");
       }
+    } else {
+      alert("Wrong PIN!!!");
     }
   };
 

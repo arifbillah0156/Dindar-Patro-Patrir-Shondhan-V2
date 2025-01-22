@@ -7,6 +7,7 @@ export default async function SingleBiodata({ params }) {
 
   const {
     boyOrGirl,
+    formID,
     name,
     age,
     height,
@@ -70,6 +71,9 @@ export default async function SingleBiodata({ params }) {
           <h1 className="text-3xl font-bold text-center mb-6 underline underline-offset-8 decoration-double text-purple-900">
             “সম্পূর্ণ বায়োডাটা”
           </h1>
+          <h2 className="text-xl font-bold text-center mb-6 underline underline-offset-8 decoration-dotted text-blue-600 tracking-wider">
+            ID: <span className="text-2xl">{formID}</span>
+          </h2>
           <div className="space-y-4">
             {" "}
             <hr />

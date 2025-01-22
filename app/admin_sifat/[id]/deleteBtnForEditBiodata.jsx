@@ -18,6 +18,8 @@ export default function DeleteButtonForEditBiodata({ dataName, dataUserName }) {
       } else {
         alert("not delete, be careful bro!!");
       }
+    } else {
+      alert("Wrong PIN!!!");
     }
   };
 

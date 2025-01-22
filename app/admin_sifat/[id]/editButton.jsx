@@ -109,7 +109,7 @@ export default function EditButton({ dataObj, dataName }) {
         alert("Failed!");
       }
     } else {
-      location.reload();
+      alert("Wrong PIN!!!");
     }
   };
 

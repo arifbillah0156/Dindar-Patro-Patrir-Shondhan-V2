@@ -163,7 +163,7 @@ export default function ApproveButton({ dataObj, dataName }) {
         alert("Failed!");
       }
     } else {
-      location.reload();
+      alert("Wrong PIN!!!");
     }
   };
 

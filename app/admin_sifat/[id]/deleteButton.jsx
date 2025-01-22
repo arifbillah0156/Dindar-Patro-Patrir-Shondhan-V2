@@ -16,6 +16,8 @@ export default function DeleteButton({ dataName, dataUserName }) {
       } else {
         alert("not delete, be careful bro!!");
       }
+    } else {
+      alert("Wrong PIN!!!");
     }
   };
 
