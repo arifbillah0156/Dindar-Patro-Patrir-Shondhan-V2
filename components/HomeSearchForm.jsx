@@ -30,7 +30,7 @@ export default function HomeSearchForm() {
     <div className="mt-14 ">
       <form
         onSubmit={handleSubmit}
-        className="max-w-md mx-auto p-6 bg-cover bg-center transition-all duration-1000 border shadow-md rounded-lg space-y-4"
+        className="max-w-md mx-auto p-6 bg-cover bg-center  border shadow-md rounded-lg space-y-4"
         style={{
           backgroundImage: `url(/Images/HomeTextBG.jpg)`,
         }}
@@ -83,10 +83,13 @@ export default function HomeSearchForm() {
           </select>
         </div>{" "}
         <hr />
-        <div className="flex justify-center ">
-          <button type="submit" className="mt-6">
+        <div className="flex justify-center">
+          <button type="submit" className="mt-6 mb-3">
             <Link
-              className="px-16 py-3 bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500 text-white text-2xl rounded-lg shadow-lg hover:ring-2 hover:bg-green-600 hover:px-20 hover:underline duration-100"
+              className="px-16 py-3 text-white text-2xl rounded-lg shadow-lg hover:ring-2 hover:bg-green-600 hover:px-20 hover:underline duration-100 bg-cover bg-center"
+              style={{
+                backgroundImage: "url(/Images/BtnBG3.jpg)",
+              }}
               href={{
                 pathname: "/search_biodata",
                 query: {

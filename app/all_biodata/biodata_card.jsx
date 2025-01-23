@@ -15,7 +15,7 @@ export default function BiodataCard({ dataName, dataObj }) {
   } = dataObj;
 
   return (
-    <div className="border rounded-3xl hover:ring-4 hover:ring-blue-400 duration-100">
+    <div className="border rounded-3xl hover:ring-4 hover:ring-purple-700 ring-offset-2 md:hover:scale-[1.02] hover:scale-[1.02] duration-200">
       {/* Header */}
 
       <div className="w-full flex justify-center   bg-purple-700 py-3 rounded-t-3xl">
@@ -51,7 +51,7 @@ export default function BiodataCard({ dataName, dataObj }) {
       {/* Middle */}
       <div className="bg-white text-black  rounded-md w-full">
         <div className="flex text-xl gap-3 px-3  border py-2">
-          <p className="underline underline-offset-2 decoration-wavy font-bold text-pink-700 pl-4">
+          <p className="underline underline-offset-[5px] decoration-wavy font-bold text-pink-700 pl-4">
             নাম:{""}
           </p>
           <p className=" text-purple-950">{name}</p>
@@ -59,28 +59,28 @@ export default function BiodataCard({ dataName, dataObj }) {
         {/*  */}
 
         <div className="flex text-xl gap-3 px-3 border border-t-0 py-2 ">
-          <p className="underline underline-offset-2 decoration-wavy font-bold text-pink-700 pl-4">
+          <p className="underline underline-offset-[5px] decoration-wavy font-bold text-pink-700 pl-4">
             বয়স:{""}
           </p>{" "}
           <p className=" text-purple-950">{age}</p>
         </div>
         {/*  */}
         <div className="flex text-xl gap-3 px-3 border border-t-0  py-2">
-          <p className="underline underline-offset-2 decoration-wavy font-bold text-pink-700 pl-4">
+          <p className="underline underline-offset-[5px] decoration-wavy font-bold text-pink-700 pl-4">
             বৈবাহিক অবস্থা:{""}
           </p>
           <p className=" text-purple-950">{marriedStatus}</p>
         </div>
         {/*  */}
         <div className="flex text-xl gap-3 px-3 border border-t-0  py-2">
-          <p className="underline underline-offset-2 decoration-wavy font-bold text-pink-700 pl-4">
+          <p className="underline underline-offset-[5px] decoration-wavy font-bold text-pink-700 pl-4">
             বিভাগ:{""}
           </p>
           <p className=" text-purple-950">{division}</p>
         </div>
         {/*  */}
         <div className="flex text-xl gap-3 px-3 border border-t-0  py-2">
-          <p className="underline underline-offset-2 decoration-wavy font-bold text-pink-700 pl-4">
+          <p className="underline underline-offset-[5px] decoration-wavy font-bold text-pink-700 pl-4">
             পেশা:{""}
           </p>
           <p className=" text-purple-950">{selectOccupation}</p>
@@ -90,7 +90,10 @@ export default function BiodataCard({ dataName, dataObj }) {
       <div className="text-center m-6">
         <Link
           href={`/all_biodata/${dataName}`}
-          className="text-white p-3 px-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl text-lg hover:ring-2 hover:underline"
+          className="text-white p-3 px-6 rounded-lg text-lg hover:ring-2 ring-offset-1 ring-purple-700 hover:underline bg-cover duration-100"
+          style={{
+            backgroundImage: "url(/Images/BtnBG2.jpg)",
+          }}
         >
           বিস্তারিত দেখুন
         </Link>

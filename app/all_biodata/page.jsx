@@ -27,10 +27,10 @@ const DataComponent = () => {
       {data ? (
         <div className="">
           <div className="w-full text-center">
-            <h1 className="px-2 py-4 text-3xl sm:text-4xl text-purple-800 underline underline-offset-8 decoration-double font-bold mt-4">
+            <h1 className="px-2 py-4 text-4xl sm:text-5xl text-purple-800 underline underline-offset-8 decoration-double font-bold mt-4">
               “সমস্ত বায়োডাটা”
             </h1>
-            <p className="text-pink-700 px-4">
+            <p className="text-pink-700 px-4 md:text-xl">
               আপনার কোনো বায়োডাটা পছন্দ হলে যোগাযোগের তথ্য পেতে “বায়োডাটা ID”
               নিয়ে আমাদের ফেসবুক পেইজে মেসেজ দিন।
             </p>

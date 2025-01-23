@@ -20,7 +20,7 @@ export default function HomePageText() {
       </div> */}
       {/*  */}
       <div
-        className="bg-white h-max w-[100%]  bg-cover bg-center transition-all duration-1000 pt-12 pb-10 rounded-3xl"
+        className="bg-white h-max w-[100%]  bg-cover bg-center pt-12 pb-10 rounded-3xl"
         style={{
           backgroundImage: "url(/Images/LogoTextBG5.jpg)",
         }}

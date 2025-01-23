@@ -16,7 +16,7 @@ export default function Footer() {
                 passHref
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border font-bold px-4 py-2 text-lg rounded-full underline underline-offset-4 decoration-blue-600 text-gray-300 border-y-pink-600"
+                className="border-2 font-bold px-4 py-2 text-lg rounded-full underline underline-offset-4 decoration-gray-400 text-gray-300 border-y-green-600"
               >
                 Arif Billah
               </Link>
