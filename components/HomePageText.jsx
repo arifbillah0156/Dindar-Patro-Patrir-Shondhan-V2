@@ -1,7 +1,7 @@
 import React from "react";
 export default function HomePageText() {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full">
       {/* <div className="relative md:hidden w-full h-40 bg-white">
         <Image
           src={img}
