@@ -178,7 +178,7 @@ export default function FormSectionForEdit({ biodata, uid }) {
       <p className="mt-2"></p>
       <hr />
       <p className="mt-2"></p>
-      <div className="min-h-screen bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500 flex items-start justify-center p-4 rounded-3xl">
+      <div className="min-h-[70vh] md:min-h-[80vh]  bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500 flex items-start justify-center p-4 rounded-3xl">
         <div className="bg-white shadow-xl rounded-xl w-full max-w-lg p-6 animate-fadeIn mt-8 border border-x-0 border-purple-700 border-y-[12px] mb-4 ">
           {submitted ? "" : <HeadText />}
 

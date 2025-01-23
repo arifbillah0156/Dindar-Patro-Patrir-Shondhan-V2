@@ -60,7 +60,7 @@ const DataComponent = () => {
   return (
     <div>
       {data ? (
-        <div className="overflow-hidden">
+        <div>
           <div className="w-full text-center">
             <h1 className="px-2 py-4 text-3xl text-purple-800 underline underline-offset-8 decoration-wavy">
               “সমস্ত বায়োডাটা”
@@ -72,7 +72,7 @@ const DataComponent = () => {
               type="text"
               placeholder="OGyEFg......"
               onChange={handleChangeForDlt}
-              className="border border-purple-600 p-3 rounded-md mr-4"
+              className="border border-purple-600 p-3 rounded-md mr-4 text-red-600"
             />
             <button
               type="submit"
