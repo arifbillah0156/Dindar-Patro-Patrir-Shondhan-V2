@@ -1,7 +1,16 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
 const EditBiodata = () => {
+  useEffect(() => {
+    const func = () => {
+      const uid = prompt("Enter uid: OGf2yp....");
+      location.replace(`/edit_biodata/-${uid}`);
+    };
+    func();
+  }, []);
+
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="text-center px-6">

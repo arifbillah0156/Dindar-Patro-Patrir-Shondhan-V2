@@ -6,10 +6,11 @@ const page = async ({ params }) => {
   const { id } = await params;
 
   const fullData = await GetBiodataWithId(id);
-  console.log(fullData);
 
   return (
-    <div>{fullData && <FormSectionForEdit biodata={fullData} uid={id} />}</div>
+    <div className="min-h-screen">
+      {fullData && <FormSectionForEdit biodata={fullData} uid={id} />}
+    </div>
   );
 };
 
