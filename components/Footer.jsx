@@ -16,7 +16,7 @@ export default function Footer() {
                 passHref
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 font-bold px-4 py-2 text-lg rounded-full underline underline-offset-4 decoration-gray-400 text-gray-300 border-y-green-600"
+                className="border-2 font-bold px-4 py-2 text-lg rounded-full underline underline-offset-4 decoration-gray-200 text-gray-300 border-x-gray-500"
               >
                 Arif Billah
               </Link>
@@ -24,8 +24,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-600 pt-6 text-center">
-          <p className="text-gray-300 text-lg">
+          <p className="text-gray-100 text-lg sm:text-xl">
             “দ্বীনদার পাত্র/পাত্রীর সন্ধান”
+          </p>
+          <p className="text-gray-200 text-lg sm:text-xl">
+            Website version - 2.0
           </p>
           <p className="text-gray-400 text-md">
             © 2020-{new Date().getFullYear()}. All Rights Reserved.

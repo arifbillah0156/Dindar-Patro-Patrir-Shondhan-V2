@@ -35,7 +35,7 @@ export default function HomeSearchForm() {
           backgroundImage: `url(/Images/HomeTextBG.jpg)`,
         }}
       >
-        <div className="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-pulse px-0 py-3 font-bold">
+        <div className="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-0 py-3 font-bold">
           <h1 className="underline decoration-purple-500 underline-offset-[12px] decoration-double mb-3">
             “বায়োডাটা খুজুন”
           </h1>
@@ -88,7 +88,7 @@ export default function HomeSearchForm() {
             <Link
               className="px-16 py-3 text-white text-2xl rounded-lg shadow-lg hover:ring-2 hover:bg-green-600 hover:px-20 hover:underline duration-100 bg-cover bg-center"
               style={{
-                backgroundImage: "url(/Images/BtnBG3.jpg)",
+                backgroundImage: "url(/Images/PlusBioBG.jpg)",
               }}
               href={{
                 pathname: "/search_biodata",

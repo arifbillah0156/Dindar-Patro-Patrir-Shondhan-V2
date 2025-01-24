@@ -120,7 +120,7 @@ export default function Home() {
               {/* Gender Select */}
               <div className="p-4  rounded-xl">
                 <label className="text-[28px] text-purple-700 mb-4 underline">
-                  আমি একজন: <span className="text-red-600">*</span>
+                  আপনি একজন: <span className="text-red-600">*</span>
                 </label>
                 <div className="">
                   <label className="flex items-center radio-container mt-2 rounded-md">
@@ -155,8 +155,6 @@ export default function Home() {
               <hr />
               {/* Personal Details */}
               <div>
-                {" "}
-                <br />
                 <FormLabel text={"নাম"} require="true" />
                 <input
                   type="text"
@@ -1197,9 +1195,10 @@ export default function Home() {
                   className="h-5 w-5 accent-blue-500 rounded focus:ring-2 focus:ring-blue-400 transition-all duration-300 mr-2"
                 />{" "}
                 <span className="text-lg">
-                  আমি সাক্ষ্য দিচ্ছি যে, আমার দেওয়া সব তথ্য সঠিক এবং সত্য। কোনো
-                  মিথ্যা তথ্য প্রদান করিলে দুনিয়াবী আইনগত এবং আখিরাতের দায়ভার
-                  সম্পূর্ণ আমার এবং আমার বিয়েতে আমার অভিভাবকের সর্বসম্মতি আছে।
+                  আমি সাক্ষ্য দিচ্ছি যে, আমার প্রদত্ত সকল তথ্য সঠিক ও সত্য। যদি
+                  কোনো মিথ্যা তথ্য প্রদান করা হয়ে থাকে, তার দুনিয়াবী আইনগত এবং
+                  আখিরাতের সকল দায়ভার সম্পূর্ণ আমার ওপর বর্তাবে। এছাড়া, আমার
+                  বিয়ের ক্ষেত্রে আমার অভিভাবকের পূর্ণ সম্মতি রয়েছে।
                 </span>
               </p>
               {/* Submit Button */}

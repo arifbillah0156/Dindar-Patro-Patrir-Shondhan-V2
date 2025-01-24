@@ -15,7 +15,7 @@ export default function BiodataCard({ dataName, dataObj }) {
   } = dataObj;
 
   return (
-    <div className="border rounded-3xl hover:ring-4 hover:ring-purple-700 ring-offset-2 md:hover:scale-[1.02] hover:scale-[1.02] duration-200">
+    <div className="border rounded-3xl hover:ring-4 hover:ring-purple-700 ring-offset-2 duration-200">
       {/* Header */}
 
       <div className="w-full flex justify-center   bg-purple-700 py-3 rounded-t-3xl">
@@ -92,7 +92,7 @@ export default function BiodataCard({ dataName, dataObj }) {
           href={`/all_biodata/${dataName}`}
           className="text-white p-3 px-6 rounded-lg text-lg hover:ring-2 ring-offset-1 ring-purple-700 hover:underline bg-cover duration-100"
           style={{
-            backgroundImage: "url(/Images/BtnBG2.jpg)",
+            backgroundImage: "url(/Images/PlusBioBG.jpg)",
           }}
         >
           বিস্তারিত দেখুন

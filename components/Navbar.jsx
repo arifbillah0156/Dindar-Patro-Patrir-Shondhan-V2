@@ -38,31 +38,31 @@ export default function Navbar() {
               <div className="hidden md:flex">
                 <Link
                   href="/"
-                  className="text-xl hover:underline mx-2 px-3 py-2  rounded-full  focus:underline"
+                  className="text-xl hover:underline mx-2 px-3 py-2  rounded-full  focus:underline underline underline-offset-4 decoration-wavy"
                 >
                   হোম
                 </Link>
                 <Link
                   href="/all_biodata"
-                  className="text-xl hover:underline mx-2 px-3 py-2  rounded-full focus:underline"
+                  className="text-xl hover:underline mx-2 px-3 py-2  rounded-full focus:underline underline underline-offset-4 decoration-wavy"
                 >
                   সমস্ত বায়োডাটা
                 </Link>
                 <Link
                   href="/create_new_biodata"
-                  className="text-xl hover:underline mx-2 px-3 py-2  rounded-full focus:underline"
+                  className="text-xl hover:underline mx-2 px-3 py-2  rounded-full focus:underline underline underline-offset-4 decoration-wavy"
                 >
                   + বায়োডাটা
                 </Link>
                 <Link
                   href="/guide"
-                  className="text-xl hover:underline mx-2 px-3 py-2  rounded-full focus:underline"
+                  className="text-xl hover:underline mx-2 px-3 py-2  rounded-full focus:underline underline underline-offset-4 decoration-wavy"
                 >
                   নির্দেশনা
                 </Link>
                 <Link
                   href="/contact"
-                  className="text-xl hover:underline mx-2 px-3 py-2  rounded-full focus:underline"
+                  className="text-xl hover:underline mx-2 px-3 py-2  rounded-full focus:underline underline underline-offset-4 decoration-wavy"
                 >
                   যোগাযোগ
                 </Link>
