@@ -27,7 +27,7 @@ const DataComponent = () => {
       {data ? (
         <div className="">
           <div className="w-full text-center">
-            <h1 className="px-2 py-4 text-4xl sm:text-5xl text-purple-800 underline underline-offset-8 decoration-double font-bold mt-4">
+            <h1 className="px-2 py-4 text-4xl sm:text-5xl text-purple-800 underline underline-offset-8 decoration-double decoration-purple-800 font-bold mt-4 animatedText">
               “সমস্ত বায়োডাটা”
             </h1>
             <p className="text-pink-700 px-4 md:text-xl">

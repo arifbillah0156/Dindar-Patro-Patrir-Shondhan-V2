@@ -58,7 +58,7 @@ const ContactForm = () => {
       className="rounded-3xl h-max w-[100%] pt-20 pb-16 mb-[-41px] bg-cover bg-center transition-all duration-1000"
     >
       <div className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-md">
-        <h2 className="text-2xl sm:text-4xl font-bold text-center mb-6 underline underline-offset-8 decoration-double text-purple-900">
+        <h2 className="text-2xl sm:text-4xl font-bold text-center mb-6 underline underline-offset-8 decoration-double decoration-purple-800 text-purple-900 animatedText">
           আমাদের সাথে যোগাযোগ
         </h2>{" "}
         <br />

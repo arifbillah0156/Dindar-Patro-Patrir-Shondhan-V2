@@ -32,6 +32,22 @@ body {
   font-style: normal;
 }
 
+.animatedText {
+  background: linear-gradient(90deg, red, blue, purple);
+  background-size: 200%;
+  background-clip: text;
+  color: transparent;
+  animation: text-animation 2s infinite linear;
+}
+@keyframes text-animation {
+  0% {
+    background-position: 200%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

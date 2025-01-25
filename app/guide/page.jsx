@@ -48,7 +48,7 @@ export default function Guide() {
     >
       <header className="py-4">
         <div className="container mx-auto px-4">
-          <h1 className="text-2xl font-bold underline decoration-double text-gray-900 bg-white w-max px-6  py-4 rounded-lg decoration-pink-400 underline-offset-4">
+          <h1 className="text-2xl font-bold underline decoration-double text-gray-900  bg-white w-max px-6  py-4 rounded-lg decoration-pink-400 underline-offset-4 ">
             ~সাধারণ নির্দেশিকা~
           </h1>
         </div>
@@ -152,7 +152,7 @@ export default function Guide() {
               আপনার যদি খোঁজ নেওয়ার আরও পদ্ধতি জানা থাকে, তাহলে সেভাবে খোঁজ নিয়ে
               দেখুন।
             </p>
-            <p className="text-xl underline underline-offset-8 decoration-wavy text-gray-800 font-semibold">
+            <p className="text-xl underline underline-offset-8 decoration-wavy decoration-purple-800 text-gray-800 font-semibold animatedText">
               জাযাকুমুল্লাহু খাইরান।
             </p>
           </div>

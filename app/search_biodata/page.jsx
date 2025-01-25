@@ -52,7 +52,7 @@ const DataComponent = () => {
       {data ? (
         <div className="">
           <div className="w-full text-center">
-            <h1 className="px-2 py-4 text-3xl text-purple-800 underline underline-offset-8 decoration-double">
+            <h1 className="px-2 py-4 text-3xl text-purple-800 underline underline-offset-8 decoration-double font-bold decoration-purple-800 animatedText">
               “{dataLen} টি বায়োডাটা”
             </h1>
             <p className="text-pink-700 text-lg px-4 underline">
@@ -80,7 +80,7 @@ const DataComponent = () => {
           </div>{" "}
           <hr />
           <div className="w-full flex justify-center mt-2">
-            <div className="text-purple-800 text-left w-max bg-gray-50 p-3 rounded-lg text-xl">
+            <div className="text-purple-800 text-left w-max bg-gray-50 p-3 rounded-lg text-xl shadow-lg">
               <p>বায়োডাটার ধরণঃ “{biodata}”।</p>
               <p>বৈবাহিক অবস্থাঃ “{marriedStatus}”।</p>
               <p>বিভাগঃ “{division}”।</p>
