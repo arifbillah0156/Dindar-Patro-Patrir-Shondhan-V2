@@ -4,7 +4,7 @@ export default function GuideSection({ header, text }) {
       <h2 className="text-xl font-semibold text-gray-800 mb-2 underline decoration-double underline-offset-4">
         {header}
       </h2>
-      <p className="text-gray-600 text-lg first-letter:text-4xl first-letter:text-blue-600 indent-4">
+      <p className="text-gray-700 text-lg first-letter:text-4xl first-letter:text-blue-600 indent-4">
         {text}
       </p>
     </section>
