@@ -71,21 +71,6 @@ export default function BiodataCard({ dataName, dataObj }) {
           </p>
           <p className=" text-purple-950">{selectMediumOfEducation}</p>
         </div>
-        {/*  */}
-        {/* <div className="flex text-xl gap-3 px-3 border border-t-0  py-2">
-          <p className="underline underline-offset-2 decoration-wavy font-bold text-pink-700 pl-4">
-            বৈবাহিক অবস্থা:{""}
-          </p>
-          <p className=" text-purple-950">{marriedStatus}</p>
-        </div> */}
-        {/*  */}
-        {/* <div className="flex text-xl gap-3 px-3 border border-t-0  py-2">
-          <p className="underline underline-offset-2 decoration-wavy font-bold text-pink-700 pl-4">
-            বিভাগ:{""}
-          </p>
-          <p className=" text-purple-950">{division}</p>
-        </div> */}
-        {/*  */}
         <div className="flex text-xl gap-3 px-3 border border-t-0  py-2">
           <p className="underline underline-offset-2 decoration-wavy font-bold text-pink-700 pl-4">
             পেশা:{""}
@@ -97,7 +82,7 @@ export default function BiodataCard({ dataName, dataObj }) {
       <div className="text-center m-6">
         <Link
           href={`/all_biodata/${dataName}`}
-          className="text-white p-3 px-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl text-lg hover:ring-2 hover:underline "
+          className="text-white p-3 px-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-lg hover:ring-2 hover:underline "
         >
           বিস্তারিত দেখুন
         </Link>

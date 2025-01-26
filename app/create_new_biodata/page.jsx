@@ -114,7 +114,7 @@ export default function Home() {
           {submitted ? "" : <HeadText />}
 
           {submitted ? (
-            <SubmitWelcome />
+            <SubmitWelcome name={formData.name} />
           ) : (
             <form onSubmit={handleSubmit}>
               {/* Gender Select */}

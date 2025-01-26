@@ -21,10 +21,10 @@ export default function Navbar() {
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
               <div
-                className="flex flex-shrink-0"
+                className="flex flex-shrink-0 "
                 title="দ্বীনদার পাত্র/পাত্রীর সন্ধান"
               >
-                <Link href="/" className="text-2xl">
+                <Link href="/" className="text-2xl box rounded-full">
                   <Image
                     src={couple}
                     width={75}

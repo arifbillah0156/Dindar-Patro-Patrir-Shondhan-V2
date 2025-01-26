@@ -41,7 +41,7 @@ export default function Guide() {
   ];
   return (
     <div
-      className="h-max w-[100%] bg-cover bg-center transition-all duration-1000 py-12 mb-[-41px] rounded-3xl"
+      className="h-max w-[100%] bg-cover bg-center transition-all duration-1000 py-12 mb-[-41px] rounded-3xl text-gray-800"
       style={{
         backgroundImage: `url(/Images/GuideBG.jpg)`,
       }}
@@ -118,7 +118,9 @@ export default function Guide() {
             {steps.map((step) => (
               <div key={step.id} className="bg-white">
                 <div>
-                  <h2 className="text-xl font-semibold">* {step.title}</h2>
+                  <h2 className="text-xl text-gray-900 font-semibold">
+                    * {step.title}
+                  </h2>
                   <p className="text-gray-800 text-lg">{step.description}</p>
                 </div>
               </div>

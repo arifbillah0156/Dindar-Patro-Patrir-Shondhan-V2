@@ -50,22 +50,23 @@ const DataComponent = () => {
   return (
     <div className="min-h-screen ">
       {data ? (
-        <div className="">
+        <div>
           <div className="w-full text-center">
-            <h1 className="px-2 py-4 text-3xl text-purple-800 underline underline-offset-8 decoration-double font-bold decoration-purple-800 animatedText">
+            <h1 className="mt-4 px-2 py-4 text-3xl text-purple-800 underline underline-offset-8 decoration-double font-bold decoration-purple-800 animatedText">
               “{dataLen} টি বায়োডাটা”
             </h1>
-            <p className="text-pink-700 text-lg px-4 underline">
+            <p className="text-pink-700 text-lg px-4">
               “আপনার কোনো বায়োডাটা পছন্দ হলে যোগাযোগের তথ্য পেতে “বায়োডাটা ID”
               নিয়ে আমাদের ফেসবুক পেইজে মেসেজ দিন।”
             </p>
-          </div>
-          <div className="text-center mb-2">
+          </div>{" "}
+          <hr />
+          <div className="text-center my-2">
             <Link
               href="/guide"
               className="text-lg  mx-2 px-3 py-2 underline text-blue-700"
             >
-              পাত্র/পাত্রীর সাথে যোগাযোগের নিয়ম জানুন
+              "পাত্র/পাত্রীর সাথে যোগাযোগের নিয়ম জানুন"
             </Link>{" "}
             <br />
             <Link
@@ -75,7 +76,7 @@ const DataComponent = () => {
               rel="noopener noreferrer"
               className="text-lg  mx-2 px-3 py-2 underline text-blue-700"
             >
-              আমাদের ফেসবুক পেইজে যেতে এখানে ক্লিক করুন
+              "আমাদের ফেসবুক পেইজে যেতে এখানে ক্লিক করুন"
             </Link>
           </div>{" "}
           <hr />

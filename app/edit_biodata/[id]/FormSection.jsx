@@ -189,7 +189,7 @@ export default function FormSectionForEdit({ biodata, uid }) {
               {/* Gender Select */}
               <div className="p-4  rounded-xl">
                 <label className="text-[28px] text-purple-700 mb-4 underline">
-                  আমি একজন: <span className="text-red-600">*</span>
+                  আপনি একজন: <span className="text-red-600">*</span>
                 </label>
                 <div className="">
                   <label className="flex items-center radio-container mt-2 rounded-md">

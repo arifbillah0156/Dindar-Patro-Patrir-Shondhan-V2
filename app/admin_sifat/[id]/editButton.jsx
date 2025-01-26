@@ -3,6 +3,11 @@ import { push, ref, set } from "firebase/database";
 import { database } from "@/lib/firebase";
 import { useState } from "react";
 import FormLabel from "./formLabelTag";
+import SelectMarriedStatus from "@/components/selectMarriedStatus";
+import SelectBloodGroup from "@/components/selectBloodGroup";
+import SelectDivision from "@/components/selectDivision";
+import SelectMediumOfEducation from "@/components/selectMediumOfEducation";
+import SelectOccupation from "@/components/selectOccupation";
 
 export default function EditButton({ dataObj, dataName }) {
   const [formData, setFormData] = useState(dataObj);
@@ -122,7 +127,42 @@ export default function EditButton({ dataObj, dataName }) {
           বায়োডাটা সংশোধন করুন
         </p>
         <div>
-          {" "}
+          {/* Gender Select */}
+          <div className="p-4  rounded-xl">
+            <label className="text-[28px] text-purple-700 mb-4 underline">
+              আপনি একজন: <span className="text-red-600">*</span>
+            </label>
+            <div className="">
+              <label className="flex items-center radio-container mt-2 rounded-md">
+                <input
+                  type="radio"
+                  name="boyOrGirl"
+                  value="পাত্র"
+                  className=""
+                  checked={formData.boyOrGirl === "পাত্র"}
+                  onChange={handleChange}
+                />
+                <span className="checkmark"></span>
+
+                <span className="genderText">পাত্র</span>
+              </label>
+
+              <label className="flex items-center radio-container rounded-md">
+                <input
+                  type="radio"
+                  name="boyOrGirl"
+                  value="পাত্রী"
+                  className=""
+                  checked={formData.boyOrGirl === "পাত্রী"}
+                  onChange={handleChange}
+                />
+                <span className="checkmark"></span>
+
+                <span className="genderText">পাত্রী</span>
+              </label>
+            </div>
+          </div>{" "}
+          <hr />
           <br />
           <FormLabel text={"নাম"} require="true" />
           <input
@@ -172,7 +212,76 @@ export default function EditButton({ dataObj, dataName }) {
           />
         </div>
         <hr />
+        {/* বৈবাহিক অবস্থা */}
+        <div>
+          <FormLabel text={"বৈবাহিক অবস্থা"} require="true" />
+          <select
+            name="marriedStatus"
+            value={formData.marriedStatus}
+            onChange={handleChange}
+            className="formSelect"
+            required
+          >
+            <SelectMarriedStatus />
+          </select>
+        </div>{" "}
         <hr />
+        {/* বয়স */}
+        <div>
+          <FormLabel text={"আপনার বয়স"} require="true" />
+          <input
+            type="number"
+            name="age"
+            value={formData.age}
+            onChange={handleChange}
+            maxLength={3}
+            placeholder="আপনার বর্তমান বয়স কত?"
+            className="formInput"
+            required
+          />
+        </div>
+        <hr />
+        {/* জন্ম তারিখ */}
+        <div>
+          <FormLabel text={"জন্ম তারিখ"} require="true" />
+          <input
+            type="date"
+            name="birthDate"
+            value={formData.birthDate}
+            onChange={handleChange}
+            className="formInput"
+          />
+        </div>
+        <hr />
+        {/* আপনার উচ্চতা */}
+        <div>
+          <FormLabel text={"আপনার উচ্চতা"} require="true" />
+          <input
+            type="number"
+            name="height"
+            value={formData.height}
+            onChange={handleChange}
+            maxLength={5}
+            placeholder="এভাবে লিখুন = 5.05"
+            className="formInput"
+            required
+          />
+        </div>
+        <hr />
+        {/* আপনার ওজন */}
+        <div>
+          <FormLabel text={"আপনার ওজন"} require="true" />
+          <input
+            type="number"
+            name="weight"
+            value={formData.weight}
+            onChange={handleChange}
+            maxLength={3}
+            placeholder="আপনার ওজন লিখুন... (কেজি)"
+            className="formInput"
+            required
+          />
+        </div>
         <hr />
         {/* bodyColor */}
         <div>
@@ -376,7 +485,33 @@ export default function EditButton({ dataObj, dataName }) {
           ></textarea>
         </div>{" "}
         <hr />
+        {/* আপনার রক্তের গ্রুপ */}
+        <div>
+          <FormLabel text={"আপনার রক্তের গ্রুপ"} require="true" />
+          <select
+            name="bloodGroup"
+            value={formData.bloodGroup}
+            onChange={handleChange}
+            className="formSelect"
+          >
+            <SelectBloodGroup />
+          </select>
+        </div>{" "}
         <hr />
+        {/* বিভাগ */}
+        <div>
+          <FormLabel text={"আপনার বিভাগ"} require="true" />
+          <select
+            id="division"
+            name="division"
+            value={formData.division}
+            onChange={handleChange}
+            className="formSelect"
+            required
+          >
+            <SelectDivision />
+          </select>
+        </div>{" "}
         <hr />
         {/* বর্তমান ঠিকানা */}
         <div>
@@ -422,6 +557,19 @@ export default function EditButton({ dataObj, dataName }) {
           ></textarea>
         </div>{" "}
         <hr />
+        <hr />
+        {/* আপনার শিক্ষা মাধ্যম*/}
+        <div>
+          <FormLabel text={"আপনার শিক্ষা মাধ্যম"} require="true" />
+          <select
+            name="selectMediumOfEducation"
+            value={formData.selectMediumOfEducation}
+            onChange={handleChange}
+            className="formSelect"
+          >
+            <SelectMediumOfEducation />
+          </select>
+        </div>{" "}
         <hr />
         {/* শিক্ষাগত যোগ্যতা */}
         <div>
@@ -516,6 +664,18 @@ export default function EditButton({ dataObj, dataName }) {
           />
         </div>{" "}
         <hr />
+        {/* পেশা */}
+        <div>
+          <FormLabel text={"আপনার পেশা"} require="true" />
+          <select
+            name="selectOccupation"
+            value={formData.selectOccupation}
+            onChange={handleChange}
+            className="formSelect"
+          >
+            <SelectOccupation />
+          </select>
+        </div>{" "}
         {/* মাসিক ইনকাম */}
         <div>
           <FormLabel text={"মাসিক ইনকাম"} require="true" />
