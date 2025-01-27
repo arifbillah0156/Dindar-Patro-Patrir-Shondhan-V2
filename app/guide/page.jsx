@@ -75,15 +75,15 @@ export default function Guide() {
               প্রথমে আমাদের বিকাশ/নগদ পার্সোনাল নাম্বারে{" "}
               <s
                 onClick={() =>
-                  alert("বর্তমানে 3৫০ টাকা ডিসকাউন্ট দেওয়া হচ্ছে!")
+                  alert("বর্তমানে 3০০ টাকা ডিসকাউন্ট দেওয়া হচ্ছে!")
                 }
-                title="বর্তমানে 3৫০ টাকা ডিসকাউন্ট দেওয়া হচ্ছে!"
+                title="বর্তমানে 3০০ টাকা ডিসকাউন্ট দেওয়া হচ্ছে!"
                 className="px-2 cursor-pointer text-pink-600"
               >
                 ৪০০
               </s>{" "}
               <span className="underline underline-offset-[6px] text-xl">
-                ৫০ (পঞ্চাশ)
+                ১০০ (একশত)
               </span>{" "}
               টাকা সেন্ড মানি করতে হবে।
             </li>
@@ -150,7 +150,7 @@ export default function Guide() {
             </p>
           </div>
           <div className="text-center mt-4">
-            <p className="text-md text-pink-800">
+            <p className="text-md text-pink-600">
               আপনার যদি খোঁজ নেওয়ার আরও পদ্ধতি জানা থাকে, তাহলে সেভাবে খোঁজ নিয়ে
               দেখুন।
             </p>
