@@ -20,7 +20,7 @@ const DataComponent = () => {
             const snapData = Object.entries(snapshot.val());
             setData(snapData.reverse());
           } else {
-            alert("Somthing wrong! No data found!!");
+            alert("Somthing went wrong! No data found!!");
           }
         })
         .catch((error) => console.log(error));
@@ -48,7 +48,7 @@ const DataComponent = () => {
             alert("Deleted the Biodata!!");
             setDeleteBiodataId("");
           })
-          .catch(() => alert("Error! Contact with Arif Billah."));
+          .catch(() => alert("Error!! Contact with Arif Billah."));
       } else {
         alert("not delete, be careful bro!!");
       }
