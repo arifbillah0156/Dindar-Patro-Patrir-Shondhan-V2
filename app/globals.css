@@ -139,7 +139,7 @@ body {
 
 .box {
   border: 3px solid #e00ce700;
-  background: linear-gradient(#3210f3, #e60dfa) padding-box,
+  background: linear-gradient(#f5f5f5, #fffeff) padding-box,
     linear-gradient(var(--angle), #ffd413, #ff0558) border-box;
   animation: 3s rotate linear infinite;
 }
