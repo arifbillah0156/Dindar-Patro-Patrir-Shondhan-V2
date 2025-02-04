@@ -1,4 +1,5 @@
 "use client";
+import AddPhotoGuide from "./AddPhotoGuide";
 import GuideSection from "./guideSection";
 export default function Guide() {
   const steps = [
@@ -65,9 +66,11 @@ export default function Guide() {
           text="দ্বীনদার পাত্র-পাত্রীর সন্ধান ওয়েবসাইটে সম্পূর্ণ বিনামূল্যে বায়োডাটা জমা দেওয়ার সুযোগ রয়েছে।"
         />
         <br />
+        <AddPhotoGuide />
+        <br />
         <section className="bg-white shadow-md rounded-lg p-6">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4 underline decoration-wavy underline-offset-4">
-            ৩. পাত্র/পাত্রীর বায়োডাটায় আগ্রহী হলে কিভাবে যোগাযোগ করবো?
+          <h2 className="text-xl font-semibold text-gray-800 mb-4 underline decoration-double underline-offset-4">
+            ৪. পাত্র/পাত্রীর বায়োডাটায় আগ্রহী হলে কিভাবে যোগাযোগ করবো?
           </h2>
           <ul className="list-disc list-inside text-gray-800 space-y-2 text-lg">
             <li>এক্ষেত্রে আপনাকে নির্দিষ্ট ফি প্রদান করতে হবে।</li>
@@ -96,6 +99,13 @@ export default function Guide() {
               {"  "}
               টাকায় একটি বায়োডাটার যোগাযোগ তথ্য নিতে পারবেন।
             </li>
+            <p className="text-pink-600 text-xl">
+              ("ছবিযুক্ত বায়োডাটার যোগাযোগ তথ্য নিতে হলে{" "}
+              <span className="underline underline-offset-[6px] text-xl">
+                ২০০ (দুইশত)
+              </span>{" "}
+              টাকা সেন্ড মানি করতে হবে।")
+            </p>
             <li>
               আমাদের বিকাশ/নগদ পার্সোনাল নাম্বার:-{" "}
               <span className="font-mono text-xl">01831-606920</span>
@@ -116,7 +126,7 @@ export default function Guide() {
         <br />
         <div className="bg-white shadow-md rounded-lg p-6">
           <h1 className="text-xl font-semibold text-gray-800 mb-2 underline decoration-double underline-offset-4">
-            ৪. বিয়ের আগে সঠিকভাবে খোঁজ নেওয়ার গুরুত্ব ও পদ্ধতি
+            ৫. বিয়ের আগে সঠিকভাবে খোঁজ নেওয়ার গুরুত্ব ও পদ্ধতি
           </h1>
           <p className="text-gray-800 text-lg  indent-4">
             বিয়ের মতো গুরুত্বপূর্ণ সিদ্ধান্ত নেওয়ার আগে শুধু বায়োডাটা দেখে পছন্দ
@@ -170,17 +180,17 @@ export default function Guide() {
         </div>
         <br />
         <GuideSection
-          header="৫. কিভাবে ক্রয়কৃত বায়োডাটার টাকা ফেরত পাবো?"
+          header="৬. কিভাবে ক্রয়কৃত বায়োডাটার টাকা ফেরত পাবো?"
           text="কোনো বায়োডাটার যোগাযোগ তথ্য নিয়ে যোগাযোগ করতে ব্যর্থ হলে আপনি টাকা ফেরত পাবেন অথবা আপনি চাইলে অন্য একটি বায়োডাটার যোগাযোগ তথ্য নিতে পারবেন। তবে বিপরীত পক্ষ যদি তাদের ব্যক্তিগত অপছন্দের কারণে আপনার প্রস্তাব প্রত্যাখ্যান করে তাহলে টাকা ফেরত পাবেন না।"
         />{" "}
         <br />
         <GuideSection
-          header="৬. আমার জমা দেওয়া বায়োডাটা এডিট করবেন কিভাবে?"
+          header="৭. আমার জমা দেওয়া বায়োডাটা এডিট করবেন কিভাবে?"
           text="আপনার জমা হওয়া বায়োডাটা এডিট করতে আমাদের ফেসবুক পেইজে মেসেজ দিয়ে বলুন।"
         />{" "}
         <br />
         <GuideSection
-          header="৭. আমার জমা দেওয়া বায়োডাটা ডিলিট করবো কিভাবে?"
+          header="৮. আমার জমা দেওয়া বায়োডাটা ডিলিট করবো কিভাবে?"
           text="আপনার জমা হওয়া বায়োডাটা ডিলিট করাতে আমাদের ফেসবুক পেইজে মেসেজ দিয়ে বলুন।"
         />
       </main>
