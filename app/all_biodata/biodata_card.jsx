@@ -90,7 +90,7 @@ export default function BiodataCard({ dataName, dataObj }) {
       <div className="text-center m-6">
         <Link
           href={`/all_biodata/${dataName}`}
-          className="text-white p-3 px-6 rounded-lg text-lg hover:ring-2 ring-offset-1 ring-purple-700 hover:underline bg-cover duration-100"
+          className="text-white p-3 px-6 rounded-lg text-lg hover:ring-2 ring-offset-2 ring-purple-700 hover:underline bg-cover duration-100"
           style={{
             backgroundImage: "url(/Images/PlusBioBG.jpg)",
           }}
