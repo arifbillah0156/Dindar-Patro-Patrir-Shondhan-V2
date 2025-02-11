@@ -163,7 +163,7 @@ export default async function SingleBiodata({ params }) {
             <Text text={"কোথায় বড় হয়েছেন?"} value={growupAddress} />
             <hr />
             {boyOrGirl === "পাত্র" && (
-              <div>
+              <div className="space-y-4">
                 <Text text={"সুন্নতি দাড়ি আছে?"} value={dari} />
                 <hr />
                 <Text
