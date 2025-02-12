@@ -223,7 +223,7 @@ export default async function SingleBiodata({ params }) {
             <br /> <br />{" "}
             <div className="border-y-4 rounded-lg border-cyan-500">
               <h3 className="text-center mt-4 mb-3 text-2xl text-cyan-600 underline decoration-wavy underline-offset-4 font-bold">
-                অন্যান্য তথ্য
+                প্রত্যাশিত জীবনসঙ্গী
               </h3>
               <Text text={"প্রত্যাশিত জীবনসঙ্গীর বয়স কত চান?"} value={new1} />
               <hr />

@@ -1126,7 +1126,6 @@ export default function Home() {
                   <SelectMarriedStatus />
                 </select>
               </div>{" "} */}
-              <hr />
               {/* আপনি কেমন জীবনসঙ্গী চান */}
               <div>
                 <FormLabel
