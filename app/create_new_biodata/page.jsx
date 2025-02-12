@@ -728,74 +728,80 @@ export default function Home() {
               </div>{" "}
               <hr />
               {/* */}
-              <div>
-                <FormLabel
-                  text={"বিয়ের পর স্ত্রীকে পর্দায় রাখবেন? (পাত্র কতৃক পূরণীয়)"}
-                />
-                <input
-                  type="text"
-                  name="wifePorda"
-                  value={formData.wifePorda}
-                  onChange={handleChange}
-                  maxLength={100}
-                  placeholder="...."
-                  className="formInput"
-                />
-              </div>{" "}
-              <hr />
-              {/* */}
-              <div>
-                <FormLabel
-                  text={
-                    "বিয়ের পর স্ত্রীকে পড়াশোনা করতে দিবেন? (পাত্র কতৃক পূরণীয়)"
-                  }
-                />
-                <input
-                  type="text"
-                  name="wifeEducation"
-                  value={formData.wifeEducation}
-                  onChange={handleChange}
-                  maxLength={100}
-                  placeholder="...."
-                  className="formInput"
-                />
-              </div>{" "}
-              <hr />
-              {/* */}
-              <div>
-                <FormLabel
-                  text={
-                    "বিয়ের পর স্ত্রীকে চাকরি করতে দিতে চান? (পাত্র কতৃক পূরণীয়)"
-                  }
-                />
-                <input
-                  type="text"
-                  name="wifeJob"
-                  value={formData.wifeJob}
-                  onChange={handleChange}
-                  maxLength={100}
-                  placeholder="...."
-                  className="formInput"
-                />
-              </div>{" "}
-              <hr />
-              {/* */}
-              <div>
-                <FormLabel
-                  text={
-                    "বিয়ের পর স্ত্রীকে নিয়ে কোথায় থাকতে চান? (পাত্র কতৃক পূরণীয়)"
-                  }
-                />
-                <input
-                  type="text"
-                  name="wifeLeaving"
-                  value={formData.wifeLeaving}
-                  onChange={handleChange}
-                  maxLength={100}
-                  placeholder="...."
-                  className="formInput"
-                />
-              </div>{" "}
+              {formData.boyOrGirl === "পাত্র" && (
+                <>
+                  <div>
+                    <FormLabel
+                      text={
+                        "বিয়ের পর স্ত্রীকে পর্দায় রাখবেন? (পাত্র কতৃক পূরণীয়)"
+                      }
+                    />
+                    <input
+                      type="text"
+                      name="wifePorda"
+                      value={formData.wifePorda}
+                      onChange={handleChange}
+                      maxLength={100}
+                      placeholder="...."
+                      className="formInput"
+                    />
+                  </div>{" "}
+                  <hr />
+                  {/* */}
+                  <div>
+                    <FormLabel
+                      text={
+                        "বিয়ের পর স্ত্রীকে পড়াশোনা করতে দিবেন? (পাত্র কতৃক পূরণীয়)"
+                      }
+                    />
+                    <input
+                      type="text"
+                      name="wifeEducation"
+                      value={formData.wifeEducation}
+                      onChange={handleChange}
+                      maxLength={100}
+                      placeholder="...."
+                      className="formInput"
+                    />
+                  </div>{" "}
+                  <hr />
+                  {/* */}
+                  <div>
+                    <FormLabel
+                      text={
+                        "বিয়ের পর স্ত্রীকে চাকরি করতে দিতে চান? (পাত্র কতৃক পূরণীয়)"
+                      }
+                    />
+                    <input
+                      type="text"
+                      name="wifeJob"
+                      value={formData.wifeJob}
+                      onChange={handleChange}
+                      maxLength={100}
+                      placeholder="...."
+                      className="formInput"
+                    />
+                  </div>{" "}
+                  <hr />
+                  {/* */}
+                  <div>
+                    <FormLabel
+                      text={
+                        "বিয়ের পর স্ত্রীকে নিয়ে কোথায় থাকতে চান? (পাত্র কতৃক পূরণীয়)"
+                      }
+                    />
+                    <input
+                      type="text"
+                      name="wifeLeaving"
+                      value={formData.wifeLeaving}
+                      onChange={handleChange}
+                      maxLength={100}
+                      placeholder="...."
+                      className="formInput"
+                    />
+                  </div>{" "}
+                </>
+              )}
               <hr />
               {/* */}
               <div>
@@ -818,7 +824,7 @@ export default function Home() {
               </div>{" "}
               <hr />
               {/* পারিবারিক তথ্য */}
-              <p className="text-center m-4 text-xl underline decoration-wavy underline-offset-4 text-gray-600">
+              <p className="text-center m-4 text-xl underline decoration-wavy underline-offset-4 text-green-600">
                 “পারিবারিক তথ্য”
               </p>
               {/*  */}
@@ -976,7 +982,7 @@ export default function Home() {
               </div>{" "}
               <hr />
               {/* প্রত্যাশিত জীবনসঙ্গী */}
-              <p className="text-center m-4 text-xl underline decoration-wavy underline-offset-4 text-gray-600">
+              <p className="text-center m-4 text-xl underline decoration-wavy underline-offset-4 text-green-600">
                 “প্রত্যাশিত জীবনসঙ্গী”
               </p>{" "}
               {/* জীবনসঙ্গীর বয়স */}
