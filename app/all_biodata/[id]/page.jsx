@@ -1,6 +1,7 @@
 import Link from "next/link.js";
 import data from "./getData.jsx";
 import Text from "./single_text.jsx";
+import Text2 from "./single_text_2.jsx";
 export default async function SingleBiodata({ params }) {
   const { id } = await params;
   const fullData = await data(id);
@@ -81,7 +82,8 @@ export default async function SingleBiodata({ params }) {
             <div className="border-y-4 rounded-lg border-green-500">
               <h3 className="text-center mt-4 mb-3 text-2xl text-green-600 underline decoration-wavy underline-offset-4 font-bold">
                 ব্যাক্তিগত তথ্য
-              </h3>
+              </h3>{" "}
+              <hr />
               <Text text={"নাম"} value={name} /> <hr />
               <Text text={"বয়স"} value={age} />
               <hr />
@@ -153,7 +155,11 @@ export default async function SingleBiodata({ params }) {
                 value={shokh}
               />
               <hr />
-              <Text text={"ব্যাক্তিগত অন্যান্য তথ্য"} value={personalDetails} />
+              <Text
+                text={"ব্যাক্তিগত অন্যান্য তথ্য"}
+                value={personalDetails}
+              />{" "}
+              <hr />
               <Text text={"রক্তের গ্রুপ"} value={bloodGroup} />
               {boyOrGirl === "পাত্র" && (
                 <div>
@@ -186,7 +192,8 @@ export default async function SingleBiodata({ params }) {
             <div className="border-y-4 rounded-lg border-purple-500">
               <h3 className="text-center mt-4 mb-3 text-2xl text-purple-600 underline decoration-wavy underline-offset-4 font-bold">
                 ঠিকানা
-              </h3>
+              </h3>{" "}
+              <hr />
               <Text text={"বিভাগ"} value={division} />
               <hr />
               <Text text={"বর্তমান ঠিকানা"} value={address} />
@@ -199,7 +206,8 @@ export default async function SingleBiodata({ params }) {
             <div className="border-y-4 rounded-lg border-pink-500">
               <h3 className="text-center mt-4 mb-3 text-2xl text-pink-600 underline decoration-wavy underline-offset-4 font-bold">
                 পারিবারিক তথ্য
-              </h3>
+              </h3>{" "}
+              <hr />
               <Text text={"পিতার পেশার বিবরণ"} value={fatherOccupation} />
               <hr />
               <Text text={"মাতার পেশার বিবরণ"} value={motherOccupation} />
@@ -224,7 +232,8 @@ export default async function SingleBiodata({ params }) {
             <div className="border-y-4 rounded-lg border-cyan-500">
               <h3 className="text-center mt-4 mb-3 text-2xl text-cyan-600 underline decoration-wavy underline-offset-4 font-bold">
                 প্রত্যাশিত জীবনসঙ্গী
-              </h3>
+              </h3>{" "}
+              <hr />
               <Text text={"প্রত্যাশিত জীবনসঙ্গীর বয়স কত চান?"} value={new1} />
               <hr />
               <Text
@@ -273,12 +282,13 @@ export default async function SingleBiodata({ params }) {
             <div className="border-y-4 rounded-lg border-blue-500">
               <h3 className="text-center mt-4 mb-3 text-2xl text-blue-600 underline decoration-wavy underline-offset-4 font-bold">
                 যোগাযোগের তথ্য
-              </h3>
+              </h3>{" "}
+              <hr />
               <Text
                 text={"যোগাযোগের তথ্য"}
                 value={"যোগাযোগের তথ্য পেতে আমাদের ফেসবুক পেইজে মেসেজ দিন।"}
               />
-              <div className="pb-4 pl-2">
+              <div className="pb-4 pl-2 md:text-center">
                 <Link
                   href="/guide"
                   className="text-lg py-2 underline text-blue-700"
