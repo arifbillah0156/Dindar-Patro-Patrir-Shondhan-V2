@@ -41,11 +41,18 @@ export default function BiodataCard({ dataName, dataObj }) {
         <p className="text-xl underline decoration-dotted underline-offset-4">
           বায়োডাটা ID
         </p>
-        <div className="pb-2 pt-1">
-          <p className="text-xl underline underline-offset-4 mb-2 font-mono">
+        <div className="pb-4 pt-1">
+          <p className="text-xl underline underline-offset-4 font-mono">
             "{formID}"
           </p>
         </div>{" "}
+        {dataObj.new9 && (
+          <div className="pb-2">
+            <p className="text-lg underline decoration-wavy underline-offset-8 mt-[-14px] mb-2">
+              “ছবিযুক্ত বায়োডাটা”
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Middle */}

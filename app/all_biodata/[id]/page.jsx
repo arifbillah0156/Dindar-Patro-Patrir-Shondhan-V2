@@ -2,6 +2,7 @@ import Link from "next/link.js";
 import data from "./getData.jsx";
 import Text from "./single_text.jsx";
 import Text2 from "./single_text_2.jsx";
+import ImageSection from "./ImageSection.jsx";
 export default async function SingleBiodata({ params }) {
   const { id } = await params;
   const fullData = await data(id);
@@ -62,7 +63,6 @@ export default async function SingleBiodata({ params }) {
     new6,
     new7,
     new8,
-    new9,
   } = fullData;
 
   return (
@@ -72,6 +72,9 @@ export default async function SingleBiodata({ params }) {
           <div className="p-4 text-3xl bg-blue-100 text-blue-700 rounded-md shadow-md tracking-wider font-mono text-center">
             ID: "{formID}"
           </div>{" "}
+          {fullData.new9 && (
+            <ImageSection img={fullData.new9} formID={formID} />
+          )}
           <br />
           <h1 className="text-3xl text-center font-bold mb-6 underline underline-offset-8 decoration-double text-purple-900 ">
             “সম্পূর্ণ বায়োডাটা”
