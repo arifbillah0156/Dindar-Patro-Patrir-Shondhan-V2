@@ -67,8 +67,8 @@ export default async function SingleBiodata({ params }) {
 
   return (
     <div>
-      <div className="flex flex-col items-center justify-center bg-gray-100 p-4 mt-4  border rounded-3xl">
-        <div className="bg-white shadow-md rounded-lg p-6 max-w-4xl w-full">
+      <div className="flex flex-col items-center justify-center bg-gray-100 p-2 md:p-4 mt-4  border rounded-xl md:rounded-3xl">
+        <div className="bg-white shadow-md rounded-lg p-3 md:p-6 max-w-4xl w-full">
           <div className="p-4 text-3xl bg-blue-100 text-blue-700 rounded-md shadow-md tracking-wider font-mono text-center">
             ID: "{formID}"
           </div>{" "}
