@@ -76,7 +76,7 @@ export default async function SingleBiodata({ params }) {
             <ImageSection img={fullData.new9} formID={formID} />
           )}
           <br />
-          <h1 className="text-3xl text-center font-bold mb-6 underline underline-offset-8 decoration-double text-purple-900 ">
+          <h1 className="text-3xl text-center font-bold mb-6 underline underline-offset-[9px] decoration-double text-purple-900 ">
             “সম্পূর্ণ বায়োডাটা”
           </h1>{" "}
           <br />
