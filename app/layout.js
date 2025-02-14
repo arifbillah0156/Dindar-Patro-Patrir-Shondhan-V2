@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import Head from "next/head";
 import Script from "next/script";
 
 export const metadata = {
@@ -9,7 +8,7 @@ export const metadata = {
   description:
     "দ্বীনদার পাত্র বা পাত্রীর জন্য বিশ্বস্ত ও ইসলামীক নিয়মে বিয়ের মাধ্যম। এখনই আপনার যোগ্য জীবনসঙ্গী খুঁজুন।",
   keywords:
-    "দ্বীনদার পাত্র, দ্বীনদার পাত্রী, মুসলিম বিয়ে, ইসলামী বিয়ে, Halal Marriage, Islamic Matchmaking",
+    "দ্বীনদার পাত্র, দ্বীনদার পাত্রী, মুসলিম বিয়ে, ইসলামী বিয়ে, Halal Marriage, Islamic Matchmaking, বিয়ে, ম্যারেজ মিডিয়া, অর্ধেক দ্বীন, অর্ধাঙ্গিনী, Marriage Media, Islamic Matrimony",
   author: "Dindar Patro Patri Team",
   icons: "/Web Icon.png",
 
@@ -51,7 +50,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
-      <Head>
+      <head>
         <meta
           name="google-site-verification"
           content="sJOws3r9s8CvjuIwHU65ZBLdx_uDrgq0tKIs4SGSssM"
@@ -74,7 +73,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-      </Head>
+      </head>
       <body className="bg-gray-50">
         <Navbar />
         {children}
