@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import Script from "next/script";
 
 export const metadata = {
   title: "দ্বীনদার পাত্র/পাত্রীর সন্ধান | Halal Marriage Platform",
@@ -54,6 +55,24 @@ export default function RootLayout({ children }) {
         <meta
           name="google-site-verification"
           content="sJOws3r9s8CvjuIwHU65ZBLdx_uDrgq0tKIs4SGSssM"
+        />
+        {/*  */}
+        {/* Google Analytics (Replace 'G-1KMMWWDHLH' with your actual Measurement ID) */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-1KMMWWDHLH"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-1KMMWWDHLH');
+            `,
+          }}
         />
       </Head>
       <body className="bg-gray-50">
