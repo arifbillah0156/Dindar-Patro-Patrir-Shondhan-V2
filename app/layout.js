@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 
 export const metadata = {
   title: "দ্বীনদার পাত্র/পাত্রীর সন্ধান | Halal Marriage Platform",
@@ -10,6 +11,14 @@ export const metadata = {
     "দ্বীনদার পাত্র, দ্বীনদার পাত্রী, মুসলিম বিয়ে, ইসলামী বিয়ে, Halal Marriage, Islamic Matchmaking",
   author: "Dindar Patro Patri Team",
   icons: "/Web Icon.png",
+
+  // Google Site Verification
+  verification: {
+    "google-site-verification": "sJOws3r9s8CvjuIwHU65ZBLdx_uDrgq0tKIs4SGSssM",
+  },
+  other: {
+    google: "sJOws3r9s8CvjuIwHU65ZBLdx_uDrgq0tKIs4SGSssM",
+  },
 
   // Open Graph (Facebook, LinkedIn) Meta Tags
   openGraph: {
@@ -41,6 +50,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="sJOws3r9s8CvjuIwHU65ZBLdx_uDrgq0tKIs4SGSssM"
+        />
+      </Head>
       <body className="bg-gray-50">
         <Navbar />
         {children}
