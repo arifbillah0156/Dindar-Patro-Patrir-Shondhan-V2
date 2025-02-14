@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Disallow unnecessary Next.js files/folders
+Disallow: /_next/
+Disallow: /api/
+
+# Disallow private or sensitive pages (if needed)
+Disallow: /admin_sifat/
+
+# Sitemap Declaration (Important for SEO)
+Sitemap: https://www.dindarpatropatri.xyz/sitemap.xml
