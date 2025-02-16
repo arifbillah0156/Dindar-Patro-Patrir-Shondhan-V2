@@ -19,9 +19,9 @@ export const metadata = {
 
   // Open Graph (Facebook, LinkedIn) Meta Tags
   openGraph: {
-    title: "দ্বীনদার পাত্র/পাত্রীর সন্ধান | Trusted Halal Marriage",
+    title: "দ্বীনদার পাত্র/পাত্রীর সন্ধান",
     description:
-      "বিশ্বস্ত ও ইসলামী নিয়মে বিয়ের উপযুক্ত পাত্র/পাত্রীর সন্ধান করুন।",
+      "দ্বীনদার পাত্র/পাত্রীর সন্ধান | Trusted Halal Marriage. বিশ্বস্ত ও ইসলামী নিয়মে বিয়ের উপযুক্ত পাত্র/পাত্রীর সন্ধান করুন।",
     url: "https://www.dindarpatropatri.xyz/",
     type: "website",
     image: {
