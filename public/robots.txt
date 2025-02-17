@@ -5,8 +5,12 @@ Allow: /
 Disallow: /_next/
 Disallow: /api/
 
-# Disallow private or sensitive pages (if needed)
+# Disallow private or sensitive pages
 Disallow: /admin_sifat/
+
+# Allow sitemap and robots.txt (Essential for SEO)
+Allow: /sitemap.xml
+Allow: /robots.txt
 
 # Sitemap Declaration (Important for SEO)
 Sitemap: https://www.dindarpatropatri.xyz/sitemap.xml
